@@ -20,7 +20,7 @@
     transform: translateX(50%);
   }
   
-  .fromLeft,
+  .fromLeft, 
   .fromRight {
     transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
     transition: opacity 250ms ease-in, transform 400ms ease-in;
