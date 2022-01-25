@@ -30,7 +30,7 @@ export default function CarouselHorizontal() {
                                 <p fadein='true' className={`${effectStyles.fromBottom} ${styles.boxParagraphe}`}>Votre présence quotidienne ainsi que celle de vos partenaires entre les annonces et dans les messageries de vos utilisateurs, durant toute leur recherche immobilière. Proposez vos services, au moment approprié.</p>
                             </div>
                             <div id='carouselScd' className={`${effectStyles.fromBottom} ${carouselHorizontal.textGlobal}`}>
-                                <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>B</span>oostez votre canal d'acquisition</h3>
+                                <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>B</span>oostez votre canal d&apos;acquisition</h3>
                                 <p className={`${styles.boxParagraphe}`}>Attirez de nouveaux utilisateurs en les aidant à trouver leur futur logement grâce à une alerte personnalisée, en temps réel, des nouvelles annonces mises en ligne.</p>
                             </div>
                             <div id='carouselThd' className={`${effectStyles.fromBottom} ${carouselHorizontal.textGlobal}`}>
