@@ -12,7 +12,7 @@ export default function Home() {
     <div className={styles.container}>
         <Head>
           <title>Leny agrégateur d&apos;annonces immobilières</title>
-          <meta name="description" content="Leny agrégateur d'annonces immobilières en marque blanche" />
+          <meta name="description" content="Leny agrégateur d&apos;annonces immobilières en marque blanche" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
