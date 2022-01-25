@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "node server/server.js",
+    "start": "node server/index.js",
     "lint": "next lint",
     "export": "next export"
   },
