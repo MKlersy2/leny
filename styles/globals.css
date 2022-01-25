@@ -1,3 +1,78 @@
+@font-face {
+  font-family: 'UniversNextMedium';
+  font-style: normal;
+  src: url('../public/police/UniversNextMedium/UniversNextW05-MediumCond.eot');
+  src: url('../public/police/UniversNextMedium/UniversNextW05-MediumCond.eot') format('embedded-opentype'), url('../public/police/UniversNextMedium/UniversNextW05-MediumCond.woff2') format('woff2'), url('../public/police/UniversNextMedium/UniversNextW05-MediumCond.woff') format('woff'), url('../public/police/UniversNextMedium/UniversNextW05-MediumCond.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'UniversNext';
+  font-style: normal;
+  src: url('../public/police/UniversNext/UniversNextW05-Condensed.eot');
+  src: url('../public/police/UniversNext/UniversNextW05-Condensed.eot') format('embedded-opentype'), url('../public/police/UniversNext/UniversNextW05-Condensed.woff2') format('woff2'), url('../public/police/UniversNext/UniversNextW05-Condensed.woff') format('woff'), url('../public/police/UniversNext/UniversNextW05-Condensed.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'hkGrotesk';
+  font-style: light;
+  src: url('../public/police/hk-grotesk/HKGrotesk-Light.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'blackMamba';
+  font-style: light;
+  src: url('../public/police/blackMamba/BlackMamba-Venom-WebXL.woff') format("woff");
+}
+
+
+@font-face {
+  font-family: 'dinCondensed';
+  font-style: light;
+  src: url('../public/police/dinCondensed/D-DINCondensed.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'dinRegular';
+  font-style: normal;
+  src: url('../public/police/dinRegular/DIN-Regular.woff');
+  src: url('../public/police/dinRegular/DIN-Regular.woff') format('woff'), url('../public/police/dinRegular/DIN-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'dinProRegular';
+  font-style: normal;
+  src: url('../public/police/dinProRegular/dinPRO-Regular.woff');
+  src: url('../public/police/dinProRegular/dinPRO-Regular.woff') format('woff'), url('../public/police/dinProRegular/dinPRO-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/police/Proxima/proximanova-bold-webfont.fbe673b8.woff') format("woff");
+}
+
+@font-face {
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../public/police/Proxima/proximanova-semibold-webfont.e68c916d.woff') format("woff");
+}
+
+@font-face {
+  font-family: Proxima;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/police/Proxima/proximanova-regular-webfont.a542f37c.woff') format("woff")
+}
+
+@font-face {
+  font-family: Proxima;
+  font-style: normal;
+  font-weight: 200;
+  src: url('../public/police/Proxima/proximanova-thin-webfont.eaa0a954.woff') format("woff")
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +88,27 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  padding:0;
+  margin:0;
+  font-weight: 400;
+  /* font-family: 'UniversNext', "Arial Bold", sans-serif;; */
+}
+
+h1, h2 {
+  font-family: 'Proxima', Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 30pt;
+  font-family: 'Proxima', Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-size: 30px;
+  font-family: 'dinCondensed';
+  line-height: 44px;
 }

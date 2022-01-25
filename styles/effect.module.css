@@ -1,0 +1,84 @@
+.fadeIn {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+
+  
+  .fadeIn.appear {
+    opacity: 1;
+  }
+  
+  .fromLeft {
+    grid-column: 2 / 3;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .fromRight {
+    grid-column: 3 / 4;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  
+  .fromLeft,
+  .fromRight {
+    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in,
+      -webkit-transform 400ms ease-in;
+    opacity: 0;
+  }
+  
+  .fromLeft.appear,
+  .fromRight.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+
+  .fromTop {
+    /* grid-column: 2 / 3; */
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  
+  .fromBottom {
+    /* grid-column: 3 / 4; */
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+.fromTop, 
+.fromBottom {
+  transition: all 800ms ease-in;
+  opacity: 0;
+  -webkit-transition: all 800ms ease-in;
+  -moz-transition: all 800ms ease-in;
+  -ms-transition: all 800ms ease-in;
+  -o-transition: all 800ms ease-in;
+}
+
+.fromNowhere {
+  opacity: 0;
+  transition: 800ms;
+  -webkit-transition: 800ms;
+  -moz-transition: 800ms;
+  -ms-transition: 800ms;
+  -o-transition: 800ms;
+}
+  
+.fromNowhere.appear { 
+  opacity: 1;
+}
+
+  .fromTop.appear,
+  .fromBottom.appear {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .box {
+    overflow: hidden;
+  }

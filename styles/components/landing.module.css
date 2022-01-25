@@ -1,3 +1,81 @@
 .title {
-    font-size: 20pt;
-  }
+  font-size: 20pt;
+}
+
+.global {
+  height: 100vh;
+}
+
+.bigGlobal {
+  height: 350vh;
+  background: #121212;
+  position: relative;
+}
+
+.subGlobal {
+  height: 80vh;
+}
+
+.titleGlobal {
+  color:white;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.image {
+  position: absolute;
+  top:499px;
+  right: 10vw;
+}
+
+.margeForImg {
+  padding-left:15vw;
+  padding-right:15vw;
+  margin-right: 350px;
+}
+
+.marge {
+  padding-left:15vw;
+  padding-right:15vw;
+}
+
+.step1 {
+  position: absolute;
+  top:100vh;
+  width:100%;
+  height:2px;
+  /* background-color:yellow; */
+}
+.step2 {
+  position: absolute;
+  top:200vh;
+  width:100%;
+  height:2px;
+  /* background-color:yellow; */
+}
+.step3 {
+  position: absolute;
+  top:400vh;
+  width:100%;
+  height:2px;
+  /* background-color:yellow; */
+}
+
+.ligature {
+  font-family: 'blackMamba';
+  position: inherit !important;
+}
+
+
+
+
+.triggerCarousel1 {}
+.triggerCarousel2 {}
+.stepCarousel1 {}
+.stepCarousel2 {}

@@ -1,0 +1,49 @@
+.main {
+    height: 300vh;
+    background: rgb(59,51,23);
+    background-image: linear-gradient(180deg, #3B3317 0%, #373017 0%, #262214 2%, #1B1913 4%, #141412 6%, #121212 37%);
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 108px;
+    line-height: 118px;
+    letter-spacing: -.03em;
+}
+
+
+h1 span.lighter {
+    font-weight: 200;
+  }
+
+.displayFlex {
+    display: flex;
+}
+
+.flexCol {
+    flex-direction: column;
+}
+
+.subFlex50 {
+    width: 50%;
+}
+
+.positionRelative {
+    position: relative;
+}
+
+.boxSubtitle {
+    margin-right: 100px;
+    line-height: 50px;
+    font-size: 64px;
+}
+
+.boxParagraphe {
+  line-height: 44px;
+  font-size: 30px;
+}
+
+.colorBlack {
+    color: black;
+}

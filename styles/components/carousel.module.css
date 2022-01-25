@@ -1,0 +1,101 @@
+.global {
+    width: calc(100% - 30vw);
+    height: min-content;
+    margin: 0 15vw;
+    padding-top:100px;
+}
+
+.title {
+    margin-top:0
+}
+
+.color {
+    color: rgb(116, 116, 116);
+}
+
+.active {
+    color:white;
+}
+
+.finished {
+    position:absolute;
+    bottom:20px;
+    left:0;
+}
+
+.inactive {
+    color: rgb(116, 116, 116);
+}
+
+.listeCenter {
+    align-items: center;
+}
+
+.liste div:not(.loader):not(.step) {
+    padding: 20px;
+}
+
+.liste .horizontal {
+    flex-direction: column !important;
+}
+
+.loader {
+    padding:0;
+    margin:0;
+    width: 20px;
+    height: 2px;
+    background-color:rgb(182, 182, 182);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.loaderHorizontal {
+    width: 2px;
+    height: 20px;
+}
+
+.loaderActive { 
+    width: 100px;
+}
+
+.globalActive {
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+.step {
+    padding: 0;
+    margin:0;
+    width:0;
+    height: 2px;
+    background-color: white;
+}
+
+.listeDesc {
+    position: relative;
+    color: white;
+
+}
+.listeDesc span {
+    position: absolute;
+}
+
+.boxHorizontal {
+    width: -webkit-fill-available;
+}
+
+.textGlobal  {
+    position: absolute;
+    top: 0;
+}
+
+.number1 {
+
+}
+.number2 {
+
+}
