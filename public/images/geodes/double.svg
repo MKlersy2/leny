@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="137px" viewBox="0 0 66 137" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Group" transform="translate(1.500000, 1.500000)" stroke="#D8D8D8">
+            <polyline id="Line-3" stroke-width="2" transform="translate(47.304487, 95.532865) scale(-1, 1) translate(-47.304487, -95.532865) " points="31.5363243 57.0657298 31.5363243 78.9701839 63.0726487 134"></polyline>
+            <polyline id="Line-3" stroke-width="2" transform="translate(47.304487, 38.467135) scale(-1, -1) translate(-47.304487, -38.467135) " points="31.5363243 0 31.5363243 21.9044542 63.0726487 76.9342702"></polyline>
+            <polyline id="Line-3" stroke-width="2" transform="translate(15.768162, 38.467135) scale(1, -1) translate(-15.768162, -38.467135) " points="1.13686838e-13 1.13686838e-13 1.13686838e-13 21.9044542 31.5363243 76.9342702"></polyline>
+            <polyline id="Line" stroke-width="2" points="31.5363243 134 16.519027 86.930268 16.519027 62.2367102 31.5363243 0"></polyline>
+            <polyline id="Line" stroke-width="2" transform="translate(39.044973, 67.000000) scale(-1, 1) translate(-39.044973, -67.000000) " points="46.5536216 134 31.5363243 86.930268 31.5363243 62.2367102 46.5536216 0"></polyline>
+            <polyline id="Line-2" points="-1.61515321e-16 55 17 62 46.5536216 62 63.0726487 55"></polyline>
+            <polyline id="Line-4" points="63.0726487 79 47 87 16.519027 87 0 79"></polyline>
+            <polyline id="Line-3" stroke-width="2" points="1.13686838e-13 57.0657298 1.13686838e-13 78.9701839 31.5363243 134"></polyline>
+        </g>
+    </g>
+</svg>

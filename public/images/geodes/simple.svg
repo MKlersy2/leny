@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="137px" viewBox="0 0 66 137" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Group" transform="translate(1.938136, 1.500000)" stroke="#FFFFFF">
+            <line x1="0.230861522" y1="0" x2="31.0981883" y2="69" id="Line-3" stroke-width="2" transform="translate(15.664525, 34.500000) scale(1, -1) translate(-15.664525, -34.500000) "></line>
+            <line x1="31.2308615" y1="0" x2="62.0981883" y2="69" id="Line-3" stroke-width="2" transform="translate(46.664525, 34.500000) scale(-1, -1) translate(-46.664525, -34.500000) "></line>
+            <polyline id="Line" stroke-width="2" points="31.0981883 134 15.3300261 77 31.0981883 1.36424205e-12"></polyline>
+            <polyline id="Line" stroke-width="2" transform="translate(38.982269, 67.000000) scale(-1, 1) translate(-38.982269, -67.000000) " points="46.8663505 134 31.0981883 76.9342702 46.8663505 1.36424205e-12"></polyline>
+            <polyline id="Line-4" points="62.0981883 69.9658016 46.561864 77 15.3300261 77 -1.11261245e-13 69.5119886"></polyline>
+            <line x1="31.2308615" y1="69.9658016" x2="62.0981883" y2="134" id="Line-3" stroke-width="2" transform="translate(46.664525, 101.982901) scale(-1, 1) translate(-46.664525, -101.982901) "></line>
+            <line x1="0.230861522" y1="69.9658016" x2="31.0981883" y2="134" id="Line-3" stroke-width="2"></line>
+        </g>
+    </g>
+</svg>

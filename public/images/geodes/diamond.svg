@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="85px" viewBox="0 0 112 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Group-2" transform="translate(2.000000, 1.423591)" stroke="#FFFFFF">
+            <line x1="36" y1="18.5764088" x2="54" y2="81.5764088" id="Line-11" stroke-width="2"></line>
+            <line x1="54" y1="18.5764088" x2="72" y2="81.5764088" id="Line-11" stroke-width="2" transform="translate(63.000000, 50.076409) scale(-1, 1) translate(-63.000000, -50.076409) "></line>
+            <line x1="54" y1="2.07640876" x2="54" y2="18.0764088" id="Line-10"></line>
+            <line x1="54" y1="19.0764088" x2="54" y2="81.5764088" id="Line-10"></line>
+            <line x1="95.5" y1="19.0764088" x2="54.5" y2="80.0764088" id="Line-10"></line>
+            <line x1="53.5" y1="19.0764088" x2="12.5" y2="80.0764088" id="Line-10" transform="translate(33.000000, 49.576409) scale(-1, 1) translate(-33.000000, -49.576409) "></line>
+            <line x1="17" y1="2.07640876" x2="12.5" y2="18.0764088" id="Line-10"></line>
+            <line x1="91.5" y1="1.07640876" x2="95.5" y2="18.0764088" id="Line-10"></line>
+            <polyline id="Line-9" stroke-width="2" points="18 1.57640876 36 17.5764088 54 1.57640876"></polyline>
+            <polyline id="Line-9" stroke-width="2" points="54 1.57640876 72 17.5764088 90 1.57640876"></polyline>
+            <line x1="1" y1="18.5764088" x2="107" y2="18.5764088" id="Line-8" stroke-width="2"></line>
+            <polyline id="Line-7" stroke-width="2" transform="translate(81.000000, 41.000000) scale(-1, 1) translate(-81.000000, -41.000000) " points="108 0 71.111171 0 54 18.5764088 108 82"></polyline>
+            <polyline id="Line-7" stroke-width="2" points="54 0 17.111171 0 0 18.5764088 54 82"></polyline>
+        </g>
+    </g>
+</svg>

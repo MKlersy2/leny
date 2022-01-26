@@ -1,6 +1,7 @@
 import carousel from '../styles/components/carousel.module.css'
 import styles from '../styles/Home.module.css'
 import effectStyles from '../styles/effect.module.css'
+import headStyle from '../styles/components/landing.module.css'
 
 
 export default function Carousel() {
@@ -25,15 +26,15 @@ export default function Carousel() {
                     <div className={carousel.boxHorizontal}>
                         <div className={`${styles.displayFlex} ${styles.flexCol} ${carousel.listeDesc}`}>
                             <div id='carouselFst' className={`${effectStyles.appear} ${carousel.textGlobal}`}>
-                                <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle} ${carousel.title}`}>Lorem Ipsum simply</h3>
+                                <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>L</span>orem Ipsum simply</h3>
                                 <p fadein='true' className={`${effectStyles.fromBottom} ${styles.boxParagraphe}`}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>
                             </div>
                             <div id='carouselScd' className={`${effectStyles.fromBottom} ${carousel.textGlobal}`}>
-                                <h3 className={`${styles.boxSubtitle} ${carousel.title}`}>Lorem Simply Ipsum</h3>
+                                <h3 className={`${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>L</span>orem Simply Ipsum</h3>
                                 <p className={`${styles.boxParagraphe}`}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>
                             </div>
                             <div id='carouselThd' className={`${effectStyles.fromBottom} ${carousel.textGlobal}`}>
-                                <h3 className={`${styles.boxSubtitle} ${carousel.title}`}>Ipsum Simply Lorem</h3>
+                                <h3 className={`${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>I</span>psum Simply Lorem</h3>
                                 <p className={`${styles.boxParagraphe}`}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>
                             </div>

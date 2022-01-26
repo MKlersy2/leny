@@ -45,7 +45,6 @@ export default class Layout extends React.Component {
         appearOnScroll.observe(slider);
       });
       var parallaxY = 0;
-      const scrollHorizontal = {};
       $(document).on("scroll", function() {
           parallaxY = $(document).scrollTop() * 0.45;
           $("div[parallax='true']").css("transform", "translateY("+parallaxY+"px)");
@@ -63,6 +62,9 @@ export default class Layout extends React.Component {
             var differenceHorizontal = (($(window).scrollTop() - $(`.${headStyle.stepCarousel1}`).position().top) / (stepOne.offset().top - $(`.${headStyle.stepCarousel1}`).position().top)) * 100
             if(differenceHorizontal < 100 && differenceHorizontal > 0) {
               $(`.${carouselHorizontal.global} #carouselFst h3`).css("opacity", "1");
+              $(`.${carouselHorizontal.global} #carouselFst .${carouselHorizontal.geodeBigGlobal}`).css("opacity", "1");
+              $(`.${carouselHorizontal.global} #carouselScd .${carouselHorizontal.geodeBigGlobal}`).css("opacity", "0");
+              $(`.${carouselHorizontal.global} #carouselThd .${carouselHorizontal.geodeBigGlobal}`).css("opacity", "0");
               $(`.${carouselHorizontal.global} #carouselFst p`).css("opacity", "1");
               $(`.${carouselHorizontal.liste} div#step1`).removeClass(`${carouselHorizontal.inactive}`);
               $(`.${carouselHorizontal.liste} div#step1`).addClass(`${carouselHorizontal.active}`);
@@ -76,12 +78,17 @@ export default class Layout extends React.Component {
               $(`.${carouselHorizontal.global} #carouselScd`).removeClass(effectStyles.appear);
               $(`.${carouselHorizontal.global} #carouselFst`).addClass(effectStyles.appear);
               $(`.${carouselHorizontal.global} #carouselFst h3`).addClass(effectStyles.appear);
+              $(`.${carouselHorizontal.global} #carouselFst .${carouselHorizontal.geodeGlobal}`).addClass(effectStyles.appear);
               $(`.${carouselHorizontal.global} #carouselFst p`).addClass(effectStyles.appear);
             } else if(differenceHorizontal >= 100 && differenceHorizontal <= 200) {
               $(`.${carouselHorizontal.global} #carouselFst h3`).css("opacity", "0");
               $(`.${carouselHorizontal.global} #carouselFst p`).css("opacity", "0");
               $(`.${carouselHorizontal.global} #carouselFst`).removeClass(effectStyles.appear);
               $(`.${carouselHorizontal.global} #carouselFst h3`).removeClass(effectStyles.appear);
+              $(`.${carouselHorizontal.global} #carouselFst .${carouselHorizontal.geodeGlobal}`).removeClass(effectStyles.appear);
+              $(`.${carouselHorizontal.global} #carouselFst .${carouselHorizontal.geodeBigGlobal}`).css("opacity", "0");
+              $(`.${carouselHorizontal.global} #carouselScd .${carouselHorizontal.geodeBigGlobal}`).css("opacity", "1");
+              $(`.${carouselHorizontal.global} #carouselThd .${carouselHorizontal.geodeBigGlobal}`).css("opacity", "0");
               $(`.${carouselHorizontal.global} #carouselFst p`).removeClass(effectStyles.appear);
               $(`.${carouselHorizontal.global} #carouselThd`).removeClass(effectStyles.appear);
               $(`.${carouselHorizontal.global} #carouselScd`).addClass(effectStyles.appear);
@@ -97,18 +104,20 @@ export default class Layout extends React.Component {
             } else if(differenceHorizontal >= 201) {
               let elementLimite = $(`.${carouselHorizontal.global} #carouselThd`);
               if((elementLimite.offset().top + elementLimite.outerHeight(true) >= $(`.${headStyle.triggerCarousel2}`).offset().top) && !($(`.${carouselHorizontal.global}`).offset().top > $(window).scrollTop()) && $(`.${carouselHorizontal.global} #carouselThd`).css("opacity") == "1") {
-                console.log("La box text depasse la suite");
                 $(`.${carouselHorizontal.global}`).removeClass(`${carouselHorizontal.globalActive}`);
                 $(`.${carouselHorizontal.global}`).addClass(`${carouselHorizontal.finished}`);
-                scrollHorizontal.scrollLock = true;
               } else {// if($(`.${carouselHorizontal.global}`).offset().top > $(window).scrollTop())  
                 $(`.${carouselHorizontal.global} #carouselFst`).removeClass(effectStyles.appear);
                 $(`.${carouselHorizontal.global} #carouselFst h3`).removeClass(effectStyles.appear);
+                $(`.${carouselHorizontal.global} #carouselFst .${carouselHorizontal.geodeGlobal}`).removeClass(effectStyles.appear);
                 $(`.${carouselHorizontal.global} #carouselFst p`).removeClass(effectStyles.appear);
                 $(`.${carouselHorizontal.global} #carouselScd`).removeClass(effectStyles.appear);
                 $(`.${carouselHorizontal.global} #carouselThd`).addClass(effectStyles.appear);
                 $(`.${carouselHorizontal.liste} div#step3`).removeClass(`${carouselHorizontal.inactive}`);
                 $(`.${carouselHorizontal.liste} div#step3`).addClass(`${carouselHorizontal.active}`);
+                $(`.${carouselHorizontal.global} #carouselFst .${carouselHorizontal.geodeBigGlobal}`).css("opacity", "0");
+                $(`.${carouselHorizontal.global} #carouselScd .${carouselHorizontal.geodeBigGlobal}`).css("opacity", "0");
+                $(`.${carouselHorizontal.global} #carouselThd .${carouselHorizontal.geodeBigGlobal}`).css("opacity", "1");
                 $(`.${carouselHorizontal.loader}:eq(1)`).removeClass(`${carouselHorizontal.loaderActive}`);
                 $(`.${carouselHorizontal.loader}:eq(2)`).addClass(`${carouselHorizontal.loaderActive}`);
                 $(`.${carouselHorizontal.global}`).addClass(`${carouselHorizontal.globalActive}`);
@@ -177,28 +186,36 @@ export default class Layout extends React.Component {
               $(`.${carousel.liste} div#step3`).removeClass(`${carousel.active}`);
               $(`.${carousel.liste} div#step3`).addClass(`${carousel.inactive}`);
               // $(`.${carousel.liste}`).css('height', "");
-            } else if(difference >= 201 && difference <= 300) {
+            } else if(difference >= 201) {
               // $(`.${carousel.liste}`).css('height', $(`.${carousel.global} #carouselThd`).outerHeight(true) + $(`.${carousel.listeCenter}`).outerHeight(true));
-              $(`.${carousel.global} #carouselFst`).removeClass(effectStyles.appear);
-              $(`.${carousel.global} #carouselFst h3`).removeClass(effectStyles.appear);
-              $(`.${carousel.global} #carouselFst p`).removeClass(effectStyles.appear);
-              $(`.${carousel.global} #carouselScd`).removeClass(effectStyles.appear);
-              $(`.${carousel.global} #carouselThd`).addClass(effectStyles.appear);
-              $(`.${carousel.liste} div#step3`).removeClass(`${carousel.inactive}`);
-              $(`.${carousel.liste} div#step3`).addClass(`${carousel.active}`);
-              $(`.${carousel.global}`).addClass(`${carousel.globalActive}`);
-              $(`.${carousel.loader}:eq(1)`).removeClass(`${carousel.loaderActive}`);
-              $(`.${carousel.loader}:eq(2)`).addClass(`${carousel.loaderActive}`);
+
+              let elementLimite = $(`.${carousel.global} #carouselThd`);
+              if((elementLimite.offset().top + elementLimite.outerHeight(true) >= $(`.${headStyle.triggerCarousel3}`).offset().top) && !($(`.${carousel.global}`).offset().top > $(window).scrollTop()) && $(`.${carousel.global} #carouselThd`).css("opacity") == "1") {
+                $(`.${carousel.global}`).removeClass(`${carousel.globalActive}`);
+                $(`.${carousel.global}`).addClass(`${carousel.finished}`);
+              } else {// if($(`.${carousel.global}`).offset().top > $(window).scrollTop())  
+                $(`.${carousel.global} #carouselFst`).removeClass(effectStyles.appear);
+                $(`.${carousel.global} #carouselFst h3`).removeClass(effectStyles.appear);
+                $(`.${carousel.global} #carouselFst p`).removeClass(effectStyles.appear);
+                $(`.${carousel.global} #carouselScd`).removeClass(effectStyles.appear);
+                $(`.${carousel.global} #carouselThd`).addClass(effectStyles.appear);
+                $(`.${carousel.liste} div#step3`).removeClass(`${carousel.inactive}`);
+                $(`.${carousel.liste} div#step3`).addClass(`${carousel.active}`);
+                $(`.${carousel.global}`).addClass(`${carousel.globalActive}`);
+                $(`.${carousel.loader}:eq(1)`).removeClass(`${carousel.loaderActive}`);
+                $(`.${carousel.loader}:eq(2)`).addClass(`${carousel.loaderActive}`);
+                $(`.${carousel.global}`).removeClass(`${carousel.finished}`);
+              }
               $(`.${carousel.step}:eq(2)`).css("width", `${difference - 200}%`);
-              $(`.${carousel.global}`).removeClass(`${carousel.finished}`);
             } else if(difference <= 0) {
               $(`.${carousel.step}:eq(1)`).css("height", `0`);
 
-            } else if(difference > 300) {
-              $(`.${carousel.global}`).removeClass(`${carousel.globalActive}`);
-              $(`.${carousel.global}`).addClass(`${carousel.finished}`);
-
             }
+            //  else if(difference > 300) {
+            //   $(`.${carousel.global}`).removeClass(`${carousel.globalActive}`);
+            //   $(`.${carousel.global}`).addClass(`${carousel.finished}`);
+
+            // }
           } else {
             $(`.${carousel.liste} div#step1`).removeClass(`${carousel.active}`);
             $(`.${carousel.liste} div#step1`).addClass(`${carousel.inactive}`);
