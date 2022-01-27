@@ -39,7 +39,7 @@ export default function Home() {
                     <h1 fadein='true' delay='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>prochain bien</span></h1>
                   </div>
                 </div>
-                <div parallax='true' style={{width: '330px', height:'600px'}} className={`${headStyle.image} ${styles.positionRelative}`}>
+                <div parallax='true' style={{width: '330px', height:'600px'}} className={`${headStyle.image}`}>
                   <Image                 
                   src="/images/meufchimney.png"
                   priority
