@@ -45,13 +45,20 @@ export default function Home() {
                     noclick='true'              
                     src="/images/meufchimney.png"
                     priority
-                    // width={330}
-                    // height={600}
                     layout='fill'
                     objectFit='cover'
                     objectPosition='bottom right'
                     className={`${headStyle.triggerHover}`}
-                    alt='Appartement'/>
+                    alt='Photo statut'/>
+                    <Image   
+                    noclick='true'              
+                    src="/images/meufchimneyInvert.jpg"
+                    priority
+                    layout='fill'
+                    objectFit='cover'
+                    objectPosition='bottom right'
+                    className={`${headStyle.triggerHover} ${headStyle.imageHidden}`}
+                    alt='Photo statut'/>
                   </div>
                 </div>
               </div>

@@ -45,6 +45,10 @@
   -o-transition: border-radius 0.5s;
 }
 
+.imageHidden {
+  opacity: 0;
+}
+
 .globalImage {
 
 }

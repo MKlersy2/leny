@@ -88,6 +88,23 @@ export default class Layout extends React.Component {
       });
       var parallaxY = 0;
       $(document).on("scroll", function() {
+
+        const image = $(`.${headStyle.image}`);
+        const imageHidden = $(`.${headStyle.imageHidden}`);
+        const imageMid = image.offset().top;
+        
+        if($(window).scrollTop() > imageMid) {
+          const imageBottom = image.offset().top + image.outerHeight(true) - $(window).scrollTop();
+          const imageStart = (imageMid - $(window).scrollTop()) * -1;
+
+          console.log(imageStart, imageBottom);
+          let pourcentage = imageStart / imageBottom;
+          console.log(pourcentage);
+          imageHidden.css("opacity", pourcentage);
+        } else {
+          imageHidden.css("opacity", "0");
+        }
+
           parallaxY = $(document).scrollTop() * 0.45;
           $("div[parallax='true']").css("transform", "translateY("+parallaxY+"px)");
 
