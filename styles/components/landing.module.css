@@ -35,10 +35,18 @@
   border-radius: var(--md,16.66667vw 16.66667vw 0 0) var(--n-md,25vw 25vw 0 0);
   overflow: hidden;
   transition: border-radius 0.5s;
+  -webkit-border-radius: var(--md,16.66667vw 16.66667vw 0 0) var(--n-md,25vw 25vw 0 0);
+  -moz-border-radius: var(--md,16.66667vw 16.66667vw 0 0) var(--n-md,25vw 25vw 0 0);
+  -ms-border-radius: var(--md,16.66667vw 16.66667vw 0 0) var(--n-md,25vw 25vw 0 0);
+  -o-border-radius: var(--md,16.66667vw 16.66667vw 0 0) var(--n-md,25vw 25vw 0 0);
   -webkit-transition: border-radius 0.5s;
   -moz-transition: border-radius 0.5s;
   -ms-transition: border-radius 0.5s;
   -o-transition: border-radius 0.5s;
+}
+
+.globalImage {
+
 }
 
 .image:hover {
@@ -50,7 +58,7 @@
 }
 
 .triggerHover {
-  
+
 }
 
 .margeForImg {

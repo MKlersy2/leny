@@ -13,8 +13,35 @@ export default class Layout extends React.Component {
         $(`.${mouse.global}`).css('top', e.clientY).css('left', e.clientX);
       });
 
+
+
+      $(`body`).on("mousedown", function(e) {
+        if($(e.target).attr('noclick') == 'true') {
+          $(`.${mouse.subGlobal}`).css('width', '40px');
+          $(`.${mouse.subGlobal}`).css('height', '40px');
+        } else {
+          $(`.${mouse.global}`).css('width', '25px');
+          $(`.${mouse.global}`).css('height', '25px');
+
+          $(`.${mouse.subGlobal}`).css('width', '25px');
+          $(`.${mouse.subGlobal}`).css('height', '25px');
+        }
+      });
+      $(`body`).on("mouseup", function(e) {
+        console.log($(e.target))
+        if($(e.target).attr('noclick') == 'true') {
+          $(`.${mouse.subGlobal}`).css('width', '40px');
+          $(`.${mouse.subGlobal}`).css('height', '40px');
+        } else {
+          $(`.${mouse.global}`).css('width', '40px');
+          $(`.${mouse.global}`).css('height', '40px');
+  
+          $(`.${mouse.subGlobal}`).css('width', '3px');
+          $(`.${mouse.subGlobal}`).css('height', '3px');
+        }
+      });
+
       $("body").on('mouseenter', `.${headStyle.image}`, function() {
-        console.log("Hover img");
         $(`.${mouse.subGlobal}`).css('width', '40px');
         $(`.${mouse.subGlobal}`).css('height', '40px');
       });
@@ -22,21 +49,6 @@ export default class Layout extends React.Component {
         $(`.${mouse.subGlobal}`).css('width', '3px');
         $(`.${mouse.subGlobal}`).css('height', '3px');
       })
-
-      $(document).on("mousedown", function() {
-        $(`.${mouse.global}`).css('width', '25px');
-        $(`.${mouse.global}`).css('height', '25px');
-
-        $(`.${mouse.subGlobal}`).css('width', '25px');
-        $(`.${mouse.subGlobal}`).css('height', '25px');
-      });
-      $(document).on("mouseup", function() {
-        $(`.${mouse.global}`).css('width', '40px');
-        $(`.${mouse.global}`).css('height', '40px');
-
-        $(`.${mouse.subGlobal}`).css('width', '3px');
-        $(`.${mouse.subGlobal}`).css('height', '3px');
-      });
 
       const faders = document.querySelectorAll("[fadein='true']");
       const sliders = document.querySelectorAll(".slideIn");

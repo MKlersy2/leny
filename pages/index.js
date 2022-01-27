@@ -39,17 +39,20 @@ export default function Home() {
                     <h1 fadein='true' delay='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>prochain bien</span></h1>
                   </div>
                 </div>
-                <div parallax='true' style={{width: '330px', height:'600px'}} className={`${headStyle.image}`}>
-                  <Image                 
-                  src="/images/meufchimney.png"
-                  priority
-                  // width={330}
-                  // height={600}
-                  layout='fill'
-                  objectFit='cover'
-                  objectPosition='bottom right'
-                  className={`${headStyle.triggerHover}`}
-                  alt='Appartement'/>
+                <div noclick='true' className={`${headStyle.globalImage}`}>
+                  <div noclick='true' parallax='true' style={{width: '330px', height:'600px'}} className={`${headStyle.image}`}>
+                    <Image   
+                    noclick='true'              
+                    src="/images/meufchimney.png"
+                    priority
+                    // width={330}
+                    // height={600}
+                    layout='fill'
+                    objectFit='cover'
+                    objectPosition='bottom right'
+                    className={`${headStyle.triggerHover}`}
+                    alt='Appartement'/>
+                  </div>
                 </div>
               </div>
               <div className={`${headStyle.subGlobal} ${styles.positionRelative} ${headStyle.triggerCarousel1}`}>
