@@ -32,6 +32,25 @@
   position: absolute;
   top:499px;
   right: 10vw;
+  border-radius: var(--md,16.66667vw 16.66667vw 0 0) var(--n-md,25vw 25vw 0 0);
+  overflow: hidden;
+  transition: border-radius 0.5s;
+  -webkit-transition: border-radius 0.5s;
+  -moz-transition: border-radius 0.5s;
+  -ms-transition: border-radius 0.5s;
+  -o-transition: border-radius 0.5s;
+}
+
+.image:hover {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.triggerHover {
+  
 }
 
 .margeForImg {
@@ -80,7 +99,10 @@
 
 
 
-.triggerCarousel1 {}
+.triggerCarousel1 {
+  user-select: none;
+  pointer-events: none;
+}
 .triggerCarousel2 {}
 .stepCarousel1 {}
 .stepCarousel2 {}

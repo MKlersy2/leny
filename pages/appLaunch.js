@@ -13,6 +13,16 @@ export default class Layout extends React.Component {
         $(`.${mouse.global}`).css('top', e.clientY).css('left', e.clientX);
       });
 
+      $("body").on('mouseenter', `.${headStyle.image}`, function() {
+        console.log("Hover img");
+        $(`.${mouse.subGlobal}`).css('width', '40px');
+        $(`.${mouse.subGlobal}`).css('height', '40px');
+      });
+      $("body").on('mouseleave', `.${headStyle.image}`, function() {
+        $(`.${mouse.subGlobal}`).css('width', '3px');
+        $(`.${mouse.subGlobal}`).css('height', '3px');
+      })
+
       $(document).on("mousedown", function() {
         $(`.${mouse.global}`).css('width', '25px');
         $(`.${mouse.global}`).css('height', '25px');
@@ -144,17 +154,10 @@ export default class Layout extends React.Component {
                 $(`.${carouselHorizontal.global}`).removeClass(`${carouselHorizontal.finished}`);
               }
               $(`.${carouselHorizontal.step}:eq(2)`).css("height", `${differenceHorizontal - 200}%`);
-              // }
             } else if(differenceHorizontal <= 0) {
               $(`.${carouselHorizontal.step}:eq(1)`).css("height", `0`);
               $(`.${carouselHorizontal.step}:eq(0)`).css("height", `0%`);
-
             }
-            //  else if(differenceHorizontal >= 301) {
-            //   $(`.${carouselHorizontal.global}`).removeClass(`${carouselHorizontal.globalActive}`);
-            //   $(`.${carouselHorizontal.global}`).addClass(`${carouselHorizontal.finished}`);
-
-            // }
           } else {
             $(`.${carouselHorizontal.liste} div#step1`).removeClass(`${carouselHorizontal.active}`);
             $(`.${carouselHorizontal.liste} div#step1`).addClass(`${carouselHorizontal.inactive}`);
@@ -206,9 +209,7 @@ export default class Layout extends React.Component {
               $(`.${carousel.loader}:eq(2)`).removeClass(`${carousel.loaderActive}`);
               $(`.${carousel.liste} div#step3`).removeClass(`${carousel.active}`);
               $(`.${carousel.liste} div#step3`).addClass(`${carousel.inactive}`);
-              // $(`.${carousel.liste}`).css('height', "");
             } else if(difference >= 201) {
-              // $(`.${carousel.liste}`).css('height', $(`.${carousel.global} #carouselThd`).outerHeight(true) + $(`.${carousel.listeCenter}`).outerHeight(true));
 
               let elementLimite = $(`.${carousel.global} #carouselThd`);
               if((elementLimite.offset().top + elementLimite.outerHeight(true) >= $(`.${headStyle.triggerCarousel3}`).offset().top) && !($(`.${carousel.global}`).offset().top > $(window).scrollTop()) && $(`.${carousel.global} #carouselThd`).css("opacity") == "1") {
@@ -232,11 +233,6 @@ export default class Layout extends React.Component {
               $(`.${carousel.step}:eq(1)`).css("height", `0`);
 
             }
-            //  else if(difference > 300) {
-            //   $(`.${carousel.global}`).removeClass(`${carousel.globalActive}`);
-            //   $(`.${carousel.global}`).addClass(`${carousel.finished}`);
-
-            // }
           } else {
             $(`.${carousel.liste} div#step1`).removeClass(`${carousel.active}`);
             $(`.${carousel.liste} div#step1`).addClass(`${carousel.inactive}`);

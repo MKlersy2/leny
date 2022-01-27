@@ -73,12 +73,24 @@
   src: url('../public/police/Proxima/proximanova-thin-webfont.eaa0a954.woff') format("woff")
 }
 
+::selection {
+  color: #dccdb4;
+  background: rgba(59, 51, 23, 0.4);
+}
+
+:root {
+  --n-md: ;
+  --md: initial;
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    cursor: default;
 }
 
 a {
