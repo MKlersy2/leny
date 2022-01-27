@@ -3,55 +3,57 @@ import styles from '../../styles/Home.module.css'
 
 function Icon() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="112"
-      height="85"
-      viewBox="0 0 112 85"
-      className={styles.geode}
-    >
-      <g
-        fill="none"
-        fillRule="evenodd"
-        stroke="none"
-        strokeLinecap="square"
-        strokeWidth="1"
-      >
-        <g stroke="#000000" transform="translate(2 1.424)">
-          <path strokeWidth="2" d="M36 18.576L54 81.576"></path>
-          <path
-            strokeWidth="2"
-            d="M54 18.576L72 81.576"
-            transform="matrix(-1 0 0 1 126 0)"
-          ></path>
-          <path d="M54 2.076L54 18.076"></path>
-          <path d="M54 19.076L54 81.576"></path>
-          <path d="M95.5 19.076L54.5 80.076"></path>
-          <path
-            d="M53.5 19.076L12.5 80.076"
-            transform="matrix(-1 0 0 1 66 0)"
-          ></path>
-          <path d="M17 2.076L12.5 18.076"></path>
-          <path d="M91.5 1.076L95.5 18.076"></path>
-          <path
-            strokeWidth="2"
-            d="M18 1.57640876L36 17.5764088 54 1.57640876"
-          ></path>
-          <path
-            strokeWidth="2"
-            d="M54 1.57640876L72 17.5764088 90 1.57640876"
-          ></path>
-          <path strokeWidth="2" d="M1 18.576L107 18.576"></path>
-          <path
-            strokeWidth="2"
-            d="M108 0L71.111171 0 54 18.5764088 108 82"
-            transform="matrix(-1 0 0 1 162 0)"
-          ></path>
-          <path strokeWidth="2" d="M54 0L17.111171 0 0 18.5764088 54 82"></path>
-        </g>
-      </g>
-    </svg>
-  );
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="228"
+          height="173"
+          viewBox="0 0 228 173"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeLinecap="square"
+            strokeWidth="1"
+          >
+            <g stroke="#f4d4aa" transform="translate(2 1.424)">
+              <path strokeWidth="2" d="M74.667 38.529L112 169.196"></path>
+              <path
+                strokeWidth="2"
+                d="M112 38.529L149.333 169.196"
+                transform="matrix(-1 0 0 1 261.333 0)"
+              ></path>
+              <path d="M112 4.307L112 37.492"></path>
+              <path d="M112 39.566L112 169.196"></path>
+              <path d="M198.074 39.566L113.037 166.084"></path>
+              <path
+                d="M110.963 39.566L25.926 166.084"
+                transform="matrix(-1 0 0 1 136.889 0)"
+              ></path>
+              <path d="M35.259 4.307L25.926 37.492"></path>
+              <path d="M189.778 2.233L198.074 37.492"></path>
+              <path
+                strokeWidth="2"
+                d="M37.3333333 3.26958853L74.6666667 36.4547737 112 3.26958853"
+              ></path>
+              <path
+                strokeWidth="2"
+                d="M112 3.26958853L149.333333 36.4547737 186.666667 3.26958853"
+              ></path>
+              <path strokeWidth="2" d="M2.074 38.529L221.926 38.529"></path>
+              <path
+                strokeWidth="2"
+                d="M224 0L147.489836 0 112 38.5288478 224 170.074074"
+                transform="matrix(-1 0 0 1 336 0)"
+              ></path>
+              <path
+                strokeWidth="2"
+                d="M112 0L35.4898361 0 0 38.5288478 112 170.074074"
+              ></path>
+            </g>
+          </g>
+        </svg>
+      );
 }
 
 export default Icon;

@@ -33,6 +33,10 @@ h1 span.lighter {
     position: relative;
 }
 
+.positionAbsolute {
+    position: absolute;
+}
+
 .boxSubtitle {
     margin-right: 100px;
     line-height: 50px;
@@ -43,6 +47,7 @@ h1 span.lighter {
 .boxParagraphe {
   line-height: 44px;
   font-size: 30px;
+  z-index: 10;
 }
 
 .colorBlack {
@@ -59,10 +64,11 @@ h1 span.lighter {
 }
 
 .geodeBigGlobal {
+    z-index: 0;
     position: absolute;
-    left:12%;
-    top:calc(2% + 120px);
-    width: calc(100% - 30vw);
+    right:5%;
+    top:-20%;
+    /* width: calc(100% - 30vw); */
     height:calc(50% - 240px);
 }
 
@@ -86,8 +92,37 @@ h1 span.lighter {
         -moz-transform: translateY(5px);
         -ms-transform: translateY(5px);
         -o-transform: translateY(5px);
-}
+    }
     100% {
         transform: translateY(0);
+    }
 }
+
+.circleGlobal {
+    position: absolute;
+    background-color: #f4d4aa;
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    transform: translate(-15%, -25%);
+    -webkit-transform: translate(-15%, -25%);
+    -moz-transform: translate(-15%, -25%);
+    -ms-transform: translate(-15%, -25%);
+    -o-transform: translate(-15%, -25%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.zIndex0 {
+    z-index: 0;
+}
+
+.zIndex1 {
+    z-index: 1;
+}
+
+.invisbleTexte {
+    opacity: 0 !important;
 }

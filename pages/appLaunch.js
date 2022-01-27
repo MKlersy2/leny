@@ -147,6 +147,7 @@ export default class Layout extends React.Component {
               // }
             } else if(differenceHorizontal <= 0) {
               $(`.${carouselHorizontal.step}:eq(1)`).css("height", `0`);
+              $(`.${carouselHorizontal.step}:eq(0)`).css("height", `0%`);
 
             }
             //  else if(differenceHorizontal >= 301) {
