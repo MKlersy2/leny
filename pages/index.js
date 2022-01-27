@@ -6,6 +6,8 @@ import Image from 'next/image'
 import effectStyles from '../styles/effect.module.css'
 import CarouselHorizontal from '../components/carouselHorizontal'
 import Carousel from '../components/carousel'
+import Diamond from '../components/geodes/diamond'
+import MouseFollow from '../components/mouseFollow.js'
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
         </Head>
 
           <main className={styles.main}>
+            <MouseFollow></MouseFollow>
             <Scroll>
               <div className={headStyle.global}>
                 <div>
@@ -60,9 +63,14 @@ export default function Home() {
                 <div className={`${headStyle.step2}`}></div>
                 <div className={`${headStyle.step3}`}></div>
               </div>
-              <div className={`${styles.positionRelative} ${headStyle.triggerCarousel2} ${styles.colorBlack}`}>
-                <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.marge}`}>
-                  <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>D</span>es services exceptionnels</h3>
+              <div className={`${styles.positionRelative} ${headStyle.triggerCarousel2} ${styles.colorBlack} ${styles.backgroundWhite}`}>
+                <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.marge} ${headStyle.espacement}`}>
+                  <div fadein='true' className={`${styles.geodeBigGlobal} ${effectStyles.fromBottom}`}>
+                      <div className={`${styles.geodeGlobal}`}>
+                          <Diamond></Diamond>
+                      </div>
+                  </div>
+                  <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle} ${styles.shadowTextWhite}`}><span className={`${headStyle.ligature}`}>D</span>es services exceptionnels</h3>
                   <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Lorem Ipsum is é aaàæsimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>
                 </div>
               </div>
@@ -74,7 +82,7 @@ export default function Home() {
                 <div className={`${headStyle.step2}`}></div>
                 <div className={`${headStyle.step3}`}></div>
               </div>
-              <div className={`${styles.positionRelative} ${headStyle.triggerCarousel3} ${styles.colorBlack}`}>
+              <div className={`${styles.positionRelative} ${headStyle.triggerCarousel3} ${styles.colorBlack} ${styles.backgroundWhite}`}>
                 <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.marge}`}>
                   <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>D</span>es services exceptionnels</h3>
                   <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Lorem Ipsum is é aaàæsimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>

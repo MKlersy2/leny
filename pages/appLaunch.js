@@ -4,9 +4,29 @@ import effectStyles from '../styles/effect.module.css';
 import headStyle from '../styles/components/landing.module.css';
 import carousel from '../styles/components/carousel.module.css';
 import carouselHorizontal from '../styles/components/carouselHorizontal.module.css';
+import mouse from '../styles/components/mouseFollow.module.css';
 
 export default class Layout extends React.Component {
     componentDidMount() {
+
+      $(document).on("mousemove", function(e) {
+        $(`.${mouse.global}`).css('top', e.clientY).css('left', e.clientX);
+      });
+
+      $(document).on("mousedown", function() {
+        $(`.${mouse.global}`).css('width', '25px');
+        $(`.${mouse.global}`).css('height', '25px');
+
+        $(`.${mouse.subGlobal}`).css('width', '25px');
+        $(`.${mouse.subGlobal}`).css('height', '25px');
+      });
+      $(document).on("mouseup", function() {
+        $(`.${mouse.global}`).css('width', '40px');
+        $(`.${mouse.global}`).css('height', '40px');
+
+        $(`.${mouse.subGlobal}`).css('width', '3px');
+        $(`.${mouse.subGlobal}`).css('height', '3px');
+      });
 
       const faders = document.querySelectorAll("[fadein='true']");
       const sliders = document.querySelectorAll(".slideIn");

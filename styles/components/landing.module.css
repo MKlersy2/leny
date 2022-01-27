@@ -45,6 +45,11 @@
   padding-right:15vw;
 }
 
+.espacement { 
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .step1 {
   position: absolute;
   top:100vh;

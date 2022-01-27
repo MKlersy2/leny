@@ -1,0 +1,47 @@
+.global {
+    z-index:99999;
+    width:40px;
+    height: 40px;
+    border:3px solid white;
+    position:fixed;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transition: width 0.5s, height 0.5s;
+    -moz-transition: width 0.5s, height 0.5s;
+    -ms-transition: width 0.5s, height 0.5s;
+    -o-transition: width 0.5s, height 0.5s;
+}
+
+.subGlobal {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:3px;
+    height:3px;
+    background-color: white;
+    transition: width 0.3s, height 0.3s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transition: width 0.3s, height 0.3s;
+    -moz-transition: width 0.3s, height 0.3s;
+    -ms-transition: width 0.3s, height 0.3s;
+    -o-transition: width 0.3s, height 0.3s;
+}

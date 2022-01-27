@@ -37,6 +37,7 @@ h1 span.lighter {
     margin-right: 100px;
     line-height: 50px;
     font-size: 64px;
+    z-index: 9;
 }
 
 .boxParagraphe {
@@ -46,4 +47,47 @@ h1 span.lighter {
 
 .colorBlack {
     color: black;
+}
+
+.shadowTextWhite {
+    text-shadow: 0 0 6px white;
+}
+
+.geodeGlobal {
+    width:124px;
+    height:268px;
+}
+
+.geodeBigGlobal {
+    position: absolute;
+    left:12%;
+    top:calc(2% + 120px);
+    width: calc(100% - 30vw);
+    height:calc(50% - 240px);
+}
+
+.geode {
+    animation-duration: 3s;
+    animation-name: geodeAnimation;
+    animation-iteration-count: infinite;
+}
+
+.backgroundWhite {
+    background-color: white;
+}
+
+@keyframes geodeAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+        -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        -o-transform: translateY(5px);
+}
+    100% {
+        transform: translateY(0);
+}
 }

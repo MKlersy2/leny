@@ -29,14 +29,14 @@ export default function CarouselHorizontal() {
                     </div>
                     <div className={carouselHorizontal.boxHorizontal}>
                         <div className={`${styles.displayFlex} ${styles.flexCol} ${carouselHorizontal.listeDesc}`}>
-                            <div id='carouselFst' className={`${effectStyles.appear} ${carouselHorizontal.textGlobal}`}>
+                            <div fadein='true' id='carouselFst' className={`${effectStyles.appear} ${effectStyles.fromBottom} ${carouselHorizontal.textGlobal}`}>
                                 <div className={`${carouselHorizontal.geodeBigGlobal}`}>
-                                    <div fadein="true" className={`${effectStyles.fromBottom}  ${carouselHorizontal.geodeGlobal}`}>
+                                    <div className={`${carouselHorizontal.geodeGlobal}`}>
                                         <Simple></Simple>
                                     </div>
                                 </div>
-                                <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>A</span>ugmentez vos conversions</h3>
-                                <p fadein='true' className={`${effectStyles.fromBottom} ${styles.boxParagraphe}`}>Votre présence quotidienne ainsi que celle de vos partenaires entre les annonces et dans les messageries de vos utilisateurs, durant toute leur recherche immobilière. Proposez vos services, au moment approprié.</p>
+                                <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>A</span>ugmentez vos conversions</h3>
+                                <p className={`${styles.boxParagraphe}`}>Votre présence quotidienne ainsi que celle de vos partenaires entre les annonces et dans les messageries de vos utilisateurs, durant toute leur recherche immobilière. Proposez vos services, au moment approprié.</p>
                             </div>
                             <div id='carouselScd' className={`${effectStyles.fromBottom} ${carouselHorizontal.textGlobal}`}>
                                 <div className={`${carouselHorizontal.geodeBigGlobal}`}>
