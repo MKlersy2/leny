@@ -32,6 +32,13 @@ export default function CarouselHorizontal() {
                             <div fadein='true' id='carouselFst' className={`${effectStyles.appear} ${effectStyles.fromBottom} ${carouselHorizontal.textGlobal}`}>
                                 <div className={`${carouselHorizontal.geodeBigGlobal}`}>
                                     <div className={`${carouselHorizontal.geodeGlobal}`}>
+                                        {/* <Image
+                                            src='/images/cryst.png'
+                                            layout='fixed'
+                                            width={200}
+                                            height={173}
+                                            className={carouselHorizontal.geode}
+                                        /> */}
                                         <Simple></Simple>
                                     </div>
                                 </div>

@@ -64,8 +64,8 @@ export default function Home() {
               </div>
               <div className={`${headStyle.subGlobal} ${styles.positionRelative} ${headStyle.triggerCarousel1}`}>
                 <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.margeForImg}`}>
-                  <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>D</span>es services exceptionnels</h3>
-                  <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Lorem Ipsum is é aaàæsimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>
+                  <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>A</span>daptable & collaboratif</h3>
+                  <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Plus qu&apos;un outil, Leny est votre nouvel allié. Une plateforme personnalisable, à votre nom, facilitant la recherche de vos clients.<br/>Les annonces de + de 3000 sites immobiliers, regroupées dans un seul et même endroit.</p>
                 </div>
               </div>
 
@@ -89,10 +89,10 @@ export default function Home() {
                         </div>
                     </div>
                     <div fadein='true' className={`${styles.zIndex1} ${effectStyles.fromNowhere} ${styles.positionAbsolute}`}>
-                      <p className={`${styles.boxParagraphe}`}>Lorem Ipsum is é aaàæsimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>
+                      <p className={`${styles.boxParagraphe}`}>Générez des leads d&apos;acheteurs, vendeurs, investisseurs, bailleurs etc., de manière automatisée</p>
                     </div>
                     <div>
-                      <p className={`${styles.boxParagraphe} ${styles.invisbleTexte}`}>Lorem Ipsum is é aaàæsimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>
+                      <p className={`${styles.boxParagraphe} ${styles.invisbleTexte}`}>Boostez et restez proche de vos prospects en proposant la meilleure alerte immobilière, depuis votre site internet ou application mobile.</p>
                     </div>
                   </div>
                 </div>

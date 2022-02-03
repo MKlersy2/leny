@@ -105,7 +105,7 @@ export default class Layout extends React.Component {
           imageHidden.css("opacity", "0");
         }
 
-          parallaxY = $(document).scrollTop() * 0.45;
+          parallaxY = $(document).scrollTop() * 0.30;
           $("div[parallax='true']").css("transform", "translateY("+parallaxY+"px)");
 
           let elementImageHorizontal = $(`.${headStyle.triggerCarousel1}`);

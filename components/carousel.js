@@ -26,17 +26,16 @@ export default function Carousel() {
                     <div className={carousel.boxHorizontal}>
                         <div className={`${styles.displayFlex} ${styles.flexCol} ${carousel.listeDesc}`}>
                             <div id='carouselFst' className={`${effectStyles.appear} ${carousel.textGlobal}`}>
-                                <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>L</span>orem Ipsum simply</h3>
-                                <p fadein='true' className={`${effectStyles.fromBottom} ${styles.boxParagraphe}`}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>
+                                <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>V</span>ous êtes une agence immobilière</h3>
+                                <p fadein='true' className={`${effectStyles.fromBottom} ${styles.boxParagraphe}`}>Assignez les recherches enregistrées, les estimations réalisées, les demandes d&apos;informations - via la messagerie intégrée - à un ou plusieurs de vos agents, en fonction de leur sectorisation géographique. Notre plateforme immobilière en marque blanche vous permettra de tracker et analyser les comportements de vos utilisateurs. Vos agents pourront désormais anticiper et vérifier si les confrères proposants les biens rajoutés en favoris sont ouverts ou non l&apos;inter-cabinet.</p>
                             </div>
                             <div id='carouselScd' className={`${effectStyles.fromBottom} ${carousel.textGlobal}`}>
-                                <h3 className={`${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>L</span>orem Simply Ipsum</h3>
-                                <p className={`${styles.boxParagraphe}`}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>
+                                <h3 className={`${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>V</span>ous êtes un chasseur immobilier</h3>
+                                <p className={`${styles.boxParagraphe}`}>Profitez du meilleur agrégateur d’annonces immobilières en temps réel. Choisissez et envoyez facilement des sélections d&apos;annonces qui correspondent aux recherches de vos clients. Personnalisez ces envois avec votre logo, vos couleurs et depuis l&apos;adresse e-mail de votre choix. Suivez ensuite les statistiques de consultations des annonces envoyées depuis votre dashboard.</p>
                             </div>
                             <div id='carouselThd' className={`${effectStyles.fromBottom} ${carousel.textGlobal}`}>
-                                <h3 className={`${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>I</span>psum Simply Lorem</h3>
-                                <p className={`${styles.boxParagraphe}`}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>
+                                <h3 className={`${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>V</span>ous êtes un courtier</h3>
+                                <p className={`${styles.boxParagraphe}`}>Attirez de nouveaux utilisateurs en les aidant à trouver leur futur logement, grâce à un outil automatisant les alertes personnalisées en temps réel. Proposez vos services au moment approprié.</p>
                             </div>
                         </div>
                     </div>
