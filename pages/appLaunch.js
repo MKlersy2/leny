@@ -5,7 +5,7 @@ import headStyle from '../styles/components/landing.module.css';
 import carousel from '../styles/components/carousel.module.css';
 import carouselHorizontal from '../styles/components/carouselHorizontal.module.css';
 import mouse from '../styles/components/mouseFollow.module.css';
-
+import pricing from '../styles/components/pricing.module.css';
 export default class Layout extends React.Component {
     componentDidMount() {
 
@@ -19,6 +19,12 @@ export default class Layout extends React.Component {
         if($(e.target).attr('noclick') == 'true') {
           $(`.${mouse.subGlobal}`).css('width', '40px');
           $(`.${mouse.subGlobal}`).css('height', '40px');
+        } else if($(e.target).attr('noclickButton') == 'true') {
+          $(`.${mouse.global}`).css('width', '25px');
+          $(`.${mouse.global}`).css('height', '25px');
+
+          $(`.${mouse.subGlobal}`).css('width', '25px');
+          $(`.${mouse.subGlobal}`).css('height', '25px');
         } else {
           $(`.${mouse.global}`).css('width', '25px');
           $(`.${mouse.global}`).css('height', '25px');
@@ -28,10 +34,15 @@ export default class Layout extends React.Component {
         }
       });
       $(`body`).on("mouseup", function(e) {
-        console.log($(e.target))
         if($(e.target).attr('noclick') == 'true') {
           $(`.${mouse.subGlobal}`).css('width', '40px');
           $(`.${mouse.subGlobal}`).css('height', '40px');
+        } else if($(e.target).attr('noclickButton') == 'true') {
+          $(`.${mouse.global}`).css('width', '30px');
+          $(`.${mouse.global}`).css('height', '30px');
+
+          $(`.${mouse.subGlobal}`).css('width', '30px');
+          $(`.${mouse.subGlobal}`).css('height', '30px');
         } else {
           $(`.${mouse.global}`).css('width', '40px');
           $(`.${mouse.global}`).css('height', '40px');
@@ -48,7 +59,22 @@ export default class Layout extends React.Component {
       $("body").on('mouseleave', `.${headStyle.image}`, function() {
         $(`.${mouse.subGlobal}`).css('width', '3px');
         $(`.${mouse.subGlobal}`).css('height', '3px');
-      })
+      });
+
+      $("body").on('mouseenter', `.${pricing.button}`, function() {
+        $(`.${mouse.global}`).css('width', '30px');
+        $(`.${mouse.global}`).css('height', '30px');
+
+        $(`.${mouse.subGlobal}`).css('width', '30px');
+        $(`.${mouse.subGlobal}`).css('height', '30px');
+      });
+      $("body").on('mouseleave', `.${pricing.button}`, function() {
+        $(`.${mouse.global}`).css('width', '40px');
+        $(`.${mouse.global}`).css('height', '40px');
+
+        $(`.${mouse.subGlobal}`).css('width', '3px');
+        $(`.${mouse.subGlobal}`).css('height', '3px');
+      });
 
       const faders = document.querySelectorAll("[fadein='true']");
       const sliders = document.querySelectorAll(".slideIn");
