@@ -1,8 +1,19 @@
-.global {
-    width: calc(100% - 30vw);
-    height: min-content;
-    margin: 0 15vw;
-    padding-top:100px;
+@media (min-width: 1468px) {
+    .global {
+        width: calc(100% - 30vw);
+        height: min-content;
+        margin: 0 15vw;
+        padding-top:100px;
+    }
+}
+
+@media (max-width: 1467px) {
+    .global {
+        width: calc(100% - 10vw);
+        height: min-content;
+        margin: 0 5vw;
+        padding-top:100px;
+    }
 }
 
 .title {

@@ -65,16 +65,32 @@
 
 }
 
-.margeForImg {
-  padding-left:15vw;
-  padding-right:15vw;
-  margin-right: 350px;
+@media (min-width: 1468px) {
+  .margeForImg {
+    padding-left:15vw;
+    padding-right:15vw;
+    margin-right: 350px;
+  }
+  
+  .marge {
+    padding-left:15vw;
+    padding-right:15vw;
+  }
 }
 
-.marge {
-  padding-left:15vw;
-  padding-right:15vw;
+@media (max-width: 1467px) {
+  .margeForImg {
+    padding-left:5vw;
+    padding-right:5vw;
+    margin-right: 350px;
+  }
+  
+  .marge {
+    padding-left:5vw;
+    padding-right:5vw;
+  }
 }
+
 
 .espacement { 
   padding-top: 120px;
