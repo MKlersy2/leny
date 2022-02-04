@@ -3,11 +3,13 @@ import headStyle from '../../styles/components/landing.module.css';
 import pricing from '../../styles/components/pricing.module.css';
 import Valid from './valid'
 import Disagree from './disagree'
+import effectStyles from '../../styles/effect.module.css'
+
 
 export default function PricingNormal() {
     return (
-        <div className={pricing.global}>
-            <div className={pricing.subGlobal}>
+        <div className={`${pricing.global} ${effectStyles.fromRight}`} fadein='true'>
+            <div className={`${pricing.subGlobal}`}>
                 <svg width="320px" height="505px" viewBox="0 0 320 505" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                     <g id="Plan-pricing" fill="none" stroke-opacity="0">
                         <g id="Group-6" transform="translate(0.000000, -0.000000)" fill="#F0F0F0">

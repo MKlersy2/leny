@@ -3,11 +3,13 @@ import headStyle from '../../styles/components/landing.module.css';
 import pricing from '../../styles/components/pricing.module.css';
 import Valid from './valid'
 import Disagree from './disagree'
+import effectStyles from '../../styles/effect.module.css'
+
 
 
 export default function PricingSpecial() {
     return (
-        <div className={`${pricing.global} ${pricing.specialGlobal}`}>
+        <div className={`${pricing.global} ${pricing.specialGlobal} ${effectStyles.fromNowhere}`} fadein='true'>
             <div className={pricing.specialInfo}>conseillé</div>
             <div className={pricing.subGlobal}>
                 {/* <svg width="320px" height="505px" viewBox="0 0 320 505" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
