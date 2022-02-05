@@ -38,7 +38,7 @@ export default function PricingNormal() {
                             <div className={`${pricing.offer}`}>
                                 <div className={`${styles.displayFlex} ${pricing.flex}`}>
                                     <div className={pricing.state}><Valid></Valid></div>
-                                    
+
                                     <div className={pricing.comment}><span className={pricing.lite}>Agrégateur en</span> <span className={pricing.bold}>marque blanche</span></div>
                                 </div>
                                 <div className={`${styles.displayFlex} ${pricing.flex}`}>
@@ -63,8 +63,8 @@ export default function PricingNormal() {
                                 </div>
                             </div>
                         </div>
-                        <Link href='../profile-builder/normal'>
-                            <div noclickButton='true' className={pricing.button}>
+                        <Link href='../profile-builder/normal' passHref>
+                            <div noclickbutton='true' className={pricing.button}>
                                 Essai gratuit
                             </div>
                         </Link>

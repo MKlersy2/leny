@@ -42,7 +42,7 @@ const Post = () => {
                                 <h1 fadein='true' className={`${effectStyles.fromBottom} ${pricingPlan.boxSubtitle}`}><span className={`${headStyle.ligature}`}>P</span>aiement du pack {`${title}`}</h1>
                                 <p fadein='true' className={`${effectStyles.fromNowhere} ${pricingPlan.boxParagraphe}`}>Redirection vers notre prestataire Stripe afin de procéder au paiement.</p>
                                 <Link href={`https://api.vendmy.com/leny/stripe/create-checkout-session.php?url=${process.env.HOSTNAME}${process.env.PORT}&offer=${offer}`}>
-                                    <div noclickButton='true' className={`${pricing.button} ${pricingPlan.littleButton}`}>
+                                    <div noclickbutton='true' className={`${pricing.button} ${pricingPlan.littleButton}`}>
                                         Souscrire à l&apos;offre
                                     </div>
                                 </Link>

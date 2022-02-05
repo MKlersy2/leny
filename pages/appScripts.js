@@ -16,7 +16,7 @@ export default class Layout extends React.Component {
             if($(e.target).attr('noclick') == 'true') {
               $(`.${mouse.subGlobal}`).css('width', '40px');
               $(`.${mouse.subGlobal}`).css('height', '40px');
-            } else if($(e.target).attr('noclickButton') == 'true') {
+            } else if($(e.target).attr('noclickbutton') == 'true') {
               $(`.${mouse.global}`).css('width', '25px');
               $(`.${mouse.global}`).css('height', '25px');
     
@@ -34,7 +34,7 @@ export default class Layout extends React.Component {
             if($(e.target).attr('noclick') == 'true') {
               $(`.${mouse.subGlobal}`).css('width', '40px');
               $(`.${mouse.subGlobal}`).css('height', '40px');
-            } else if($(e.target).attr('noclickButton') == 'true') {
+            } else if($(e.target).attr('noclickbutton') == 'true') {
               $(`.${mouse.global}`).css('width', '30px');
               $(`.${mouse.global}`).css('height', '30px');
     
