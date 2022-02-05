@@ -38,6 +38,7 @@ export default function PricingNormal() {
                             <div className={`${pricing.offer}`}>
                                 <div className={`${styles.displayFlex} ${pricing.flex}`}>
                                     <div className={pricing.state}><Valid></Valid></div>
+                                    
                                     <div className={pricing.comment}><span className={pricing.lite}>Agrégateur en</span> <span className={pricing.bold}>marque blanche</span></div>
                                 </div>
                                 <div className={`${styles.displayFlex} ${pricing.flex}`}>
