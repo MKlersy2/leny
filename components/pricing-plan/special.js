@@ -22,10 +22,10 @@ export default function PricingSpecial() {
                             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
                         </filter>
                     </defs>
-                    <g id="Plan-pricing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Plan-pricing" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                         <g id="Rectangle" transform="translate(17.000000, 1.000000)">
-                            <use fill="black" fill-opacity="1" filter="url(#filter-6hf1hdp5-_-2)" xlinkHref="#path-6hf1hdp5-_-1"></use>
-                            <use fill="#1F212D" fill-rule="evenodd" xlinkHref="#path-6hf1hdp5-_-1"></use>
+                            <use fill="black" fillOpacity="1" filter="url(#filter-6hf1hdp5-_-2)" xlinkHref="#path-6hf1hdp5-_-1"></use>
+                            <use fill="#1F212D" fillRule="evenodd" xlinkHref="#path-6hf1hdp5-_-1"></use>
                         </g>
                     </g>
                 </svg>
