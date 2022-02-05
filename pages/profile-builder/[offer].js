@@ -13,27 +13,18 @@ import pricingPlan from '../../styles/components/pricingPlan.module.css';
 const Post = () => {
   const router = useRouter()
   const { offer } = router.query
-    console.log(offer)
   if(offer === 'normal') {
-
     var title = 'individuel';
     var productId = 'price_1KPwyAJcmh9SCSTioCad92dM';
-
   } else if (offer === 'special') {
-
     var title = 'agence';
     var productId = 'price_1KPrgnJcmh9SCSTinVwOuGf4';
-
   } else if(offer === 'pro') {
-
     var title = 'premium';
     var productId = 'price_1KPwzaJcmh9SCSTiqhVh0tR7';
-
   } else {
-
     var title = 'individuel';
     var productId = 'price_1KPwyAJcmh9SCSTioCad92dM';
-
   };
 
     return (
