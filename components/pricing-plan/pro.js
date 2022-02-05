@@ -4,6 +4,7 @@ import pricing from '../../styles/components/pricing.module.css';
 import Valid from './valid'
 import Disagree from './disagree'
 import effectStyles from '../../styles/effect.module.css'
+import Link from 'next/link';
 
 
 export default function PricingNormal() {
@@ -61,9 +62,11 @@ export default function PricingNormal() {
                                 </div>
                             </div>
                         </div>
-                        <div noclickButton='true' className={pricing.button}>
-                            Choisir l&apos;offre
-                        </div>
+                        <Link href='../profile-builder/pro'>
+                            <div noclickButton='true' className={pricing.button}>
+                                Choisir l&apos;offre
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

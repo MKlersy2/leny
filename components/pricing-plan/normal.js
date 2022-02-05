@@ -62,7 +62,7 @@ export default function PricingNormal() {
                                 </div>
                             </div>
                         </div>
-                        <Link href='../profile-builder/'>
+                        <Link href='../profile-builder/normal'>
                             <div noclickButton='true' className={pricing.button}>
                                 Essai gratuit
                             </div>

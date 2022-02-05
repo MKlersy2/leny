@@ -1,0 +1,33 @@
+.global {
+    text-align: center;
+}
+
+.littleButton {
+    max-width: max-content;
+    padding: 10px;
+    margin:0 auto;
+}
+
+.boxSubtitle {
+    width: 100%;
+    line-height: 50px;
+    font-size: 64px;
+    z-index: 9;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.boxParagraphe {
+    text-align: center;
+    line-height: 44px;
+    font-size: 30px;
+    z-index: 10;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
