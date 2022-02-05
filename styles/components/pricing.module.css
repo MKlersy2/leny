@@ -23,6 +23,22 @@
     background-color: white;
 }
 
+.global:not(.specialGlobal):hover {
+    transform: scale(103%);
+    -webkit-transform: scale(103%);
+    -moz-transform: scale(103%);
+    -ms-transform: scale(103%);
+    -o-transform: scale(103%);
+}
+
+.global.specialGlobal:hover {
+    transform: scale(113%) translateY(-3%);
+    -webkit-transform: scale(113%) translateY(-3%);
+    -moz-transform: scale(113%) translateY(-3%);
+    -ms-transform: scale(113%) translateY(-3%);
+    -o-transform: scale(113%) translateY(-3%);
+}
+
 .global.specialGlobal {
     width: 354px;
     height: 539px;

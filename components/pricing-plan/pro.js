@@ -1,4 +1,4 @@
-import styles from '../../styles//Home.module.css';
+import styles from '../../styles/Home.module.css';
 import headStyle from '../../styles/components/landing.module.css';
 import pricing from '../../styles/components/pricing.module.css';
 import Valid from './valid'
