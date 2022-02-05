@@ -23,7 +23,7 @@ export default function ProfileBuilder() {
                             <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.marge}`}>
                                 <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>P</span>aiement</h3>
                                 <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Redirection vers notre prestataire Stripe afin de procéder au paiement.</p>
-                                <Link href={`https://api.vendmy.com/leny/stripe/create-checkout-session.php?url=${process.env.HOSTNAME}`}>
+                                <Link href={`https://api.vendmy.com/leny/stripe/create-checkout-session.php?url=${process.env.HOSTNAME}${process.env.PORT}`}>
                                     <div className={styles.button}>Souscrire à l&apos;offre</div>
                                 </Link>
                             </div>
