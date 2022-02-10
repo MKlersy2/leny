@@ -8,7 +8,7 @@ export default function Footer() {
                 <div>
                     <Image 
                     src={'/public/logo.png'}
-                    width={}/>
+                    width={250}/>
                 </div>
                 <div>
 
