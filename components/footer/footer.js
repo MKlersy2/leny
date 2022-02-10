@@ -12,6 +12,7 @@ export default function Footer() {
                         <Image 
                             src={'/bigLogo.png'}
                             width={231}
+                            alt={'Logo de leny'}
                             priority
                             objectFit='cover'
                             height={143}

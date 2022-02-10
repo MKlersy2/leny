@@ -64,7 +64,7 @@ function DifferentOffer(props) {
       )
     default:
       return(
-        <div>Une erreur s'est produite</div>
+        <div>Une erreur s&apos;est produite</div>
       )
   }
 }
