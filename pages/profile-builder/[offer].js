@@ -38,21 +38,53 @@ const Post = () => {
                 <MouseFollow></MouseFollow>
                     <Script>
                         <div className={headStyle.global}>
-                            <div className={`${headStyle.titleGlobal} ${pricingPlan.global}`}>
-                                <h1 fadein='true' className={`${effectStyles.fromBottom} ${pricingPlan.boxSubtitle}`}><span className={`${headStyle.ligature}`}>P</span>aiement du pack {`${title}`}</h1>
-                                <p fadein='true' className={`${effectStyles.fromNowhere} ${pricingPlan.boxParagraphe}`}>Redirection vers notre prestataire Stripe afin de procéder au paiement.</p>
-                                <Link href={`https://api.vendmy.com/leny/stripe/create-checkout-session.php?url=${process.env.HOSTNAME}${process.env.PORT}&offer=${offer}`}>
-                                    <div noclickbutton='true' className={`${pricing.button} ${pricingPlan.littleButton}`}>
-                                        Souscrire à l&apos;offre
-                                    </div>
-                                </Link>
-                            </div>
+                          <DifferentOffer offer={offer}/>
                         </div>
                     </Script>
             </main>
         </div>
     )
 
+}
+
+function DifferentOffer(props) {
+  const offerProps = props.offer;
+  switch (offerProps) {
+    case 'normal':
+      return(
+        <PresentationPack name={'individuel'} offer={'normal'}/>
+      )
+    case 'special':
+      return(
+        <PresentationPack name={'agence'} offer={'special'}/>
+      )
+    case 'pro':
+      return(
+        <PresentationPack name={'premium'} offer={'pro'}/>
+      )
+    default:
+      return(
+        <div>Une erreur s'est produite</div>
+      )
+  }
+}
+
+function PresentationPack(props) {
+  const offerProps = props.offer;
+  const titleProps = props.name;
+  return(
+    <Script>
+      <div className={`${headStyle.subTitleGlobal} ${pricingPlan.global}`}>
+          <h1 fadein='true' className={`${effectStyles.fromBottom} ${pricingPlan.boxSubtitle}`}><span className={`${headStyle.ligature}`}>N</span>otre pack {`${titleProps}`}</h1>
+          <p fadein='true' className={`${effectStyles.fromNowhere} ${pricingPlan.boxParagraphe}`}>Caedibus fecit angustus aegrum aegrum.</p>
+          <Link href={`https://api.vendmy.com/leny/stripe/create-checkout-session.php?url=${process.env.HOSTNAME}${process.env.PORT}&offer=${offerProps}`}>
+              <div noclickbutton='true' className={`${pricing.button} ${pricingPlan.littleButton}`}>
+                  Souscrire à l&apos;offre
+              </div>
+          </Link>
+      </div>
+    </Script>
+  )
 }
 
 export default Post

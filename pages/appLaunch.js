@@ -7,9 +7,10 @@ import carouselHorizontal from '../styles/components/carouselHorizontal.module.c
 
 export default class Layout extends React.Component {
   
-    componentDidMount() {
+  componentDidMount() {
 
       var parallaxY = 0;
+
       $(document).on("scroll", function() {
 
         const image = $(`.${headStyle.image}`);
@@ -20,9 +21,7 @@ export default class Layout extends React.Component {
           const imageBottom = image.offset().top + image.outerHeight(true) - $(window).scrollTop();
           const imageStart = (imageMid - $(window).scrollTop()) * -1;
 
-          console.log(imageStart, imageBottom);
           let pourcentage = imageStart / imageBottom;
-          console.log(pourcentage);
           imageHidden.css("opacity", pourcentage);
         } else {
           imageHidden.css("opacity", "0");
@@ -33,11 +32,14 @@ export default class Layout extends React.Component {
 
           let elementImageHorizontal = $(`.${headStyle.triggerCarousel1}`);
           if(elementImageHorizontal.offset().top + elementImageHorizontal.outerHeight(true) < $(window).scrollTop()) {
+            console.log("debut du calcul")
+
             $(`.${carouselHorizontal.liste}`).css('height', $(`.${carouselHorizontal.global} #carouselThd`).outerHeight(true));
             
             let stepOne = $(`.${headStyle.stepCarousel1} .${headStyle.step1}`);
             let stepTwo = $(`.${headStyle.stepCarousel1} .${headStyle.step2}`);
             let stepThree = $(`.${headStyle.stepCarousel1} .${headStyle.step3}`);
+
 
             
             
@@ -85,7 +87,7 @@ export default class Layout extends React.Component {
               $(`.${carouselHorizontal.liste} div#step3`).addClass(`${carouselHorizontal.inactive}`);
             } else if(differenceHorizontal >= 201) {
               let elementLimite = $(`.${carouselHorizontal.global} #carouselThd`);
-              if((elementLimite.offset().top + elementLimite.outerHeight(true) >= $(`.${headStyle.triggerCarousel2}`).offset().top) && !($(`.${carouselHorizontal.global}`).offset().top > $(window).scrollTop()) && $(`.${carouselHorizontal.global} #carouselThd`).css("opacity") == "1") {
+              if((elementLimite.offset().top + elementLimite.outerHeight(true) >= $(`.${headStyle.triggerCarousel2}`).offset().top) && !($(`.${carouselHorizontal.global}`).offset().top > $(window).scrollTop()) && $(`.${carouselHorizontal.global} #carouselThd`).css("opacity") >= 0.5) {
                 $(`.${carouselHorizontal.global}`).removeClass(`${carouselHorizontal.globalActive}`);
                 $(`.${carouselHorizontal.global}`).addClass(`${carouselHorizontal.finished}`);
               } else {// if($(`.${carouselHorizontal.global}`).offset().top > $(window).scrollTop())  
@@ -111,6 +113,7 @@ export default class Layout extends React.Component {
               $(`.${carouselHorizontal.step}:eq(0)`).css("height", `0%`);
             }
           } else {
+            $(`.${carouselHorizontal.step}:eq(1)`).css("height", `0`);
             $(`.${carouselHorizontal.liste} div#step1`).removeClass(`${carouselHorizontal.active}`);
             $(`.${carouselHorizontal.liste} div#step1`).addClass(`${carouselHorizontal.inactive}`);
             $(`.${carouselHorizontal.global}`).removeClass(`${carouselHorizontal.globalActive}`);

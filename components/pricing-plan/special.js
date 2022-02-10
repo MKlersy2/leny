@@ -73,7 +73,7 @@ export default function PricingSpecial() {
                                 </div>
                             </div>
                         </div>
-                        <Link href='../profile-builder/special' passHref>
+                        <Link href='/profile-builder/special' passHref>
                             <div noclickbutton='true' className={pricing.button}>
                                 Choisir l&apos;offre
                             </div>

@@ -125,3 +125,7 @@ p {
   line-height: 44px;
   text-align: justify;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

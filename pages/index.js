@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import headStyle from '../styles/components/landing.module.css'
-import Script from './appScripts'
+import AppScript from './appScripts'
 import Scroll from './appLaunch'
 import Image from 'next/image'
 import effectStyles from '../styles/effect.module.css'
@@ -13,9 +13,11 @@ import PricingSpecial from '../components/pricing-plan/special'
 import PricingNormal from '../components/pricing-plan/normal'
 import PricingPro from '../components/pricing-plan/pro'
 import pricing from '../styles/components/pricing.module.css';
-
+import {unlock, lock} from './scrollLockScript.js'
+import Footer from '../components/footer/footer'
 
 export default function Home() {
+  
   return (
     <div className={styles.container}>
         <Head>
@@ -26,10 +28,10 @@ export default function Home() {
 
           <main className={styles.main}>
             <MouseFollow></MouseFollow>
-            <Script>
+            <AppScript>
               <Scroll>
                 <div className={headStyle.global}>
-                  <div>
+                  <div className={`${styles.positionRelative} ${styles.positionRelativeSize}`}>
                     <Image
                       src="/images/background-line.svg"
                       priority
@@ -40,38 +42,40 @@ export default function Home() {
                   </div>
                   <div className={headStyle.titleGlobal}>
                     <div className={effectStyles.box}>
-                      <h1 fadein='true' className={`${styles.title} ${effectStyles.fromBottom}`}>Leny <span className={styles.lighter}>déniche votre</span></h1>
+                      <h1 fadein='true' onClick={lock} className={`${styles.title} ${effectStyles.fromBottom}`}>Leny <span className={styles.lighter}>déniche votre</span></h1>
                     </div>
                     <div className={effectStyles.box}>
-                      <h1 fadein='true' delay='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>prochain bien</span></h1>
+                      <h1 fadein='true' onClick={unlock} delay='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>prochain bien</span></h1>
                     </div>
                   </div>
                   <div noclick='true' className={`${headStyle.globalImage}`}>
                     <div noclick='true' parallax='true' style={{width: '330px', height:'600px'}} className={`${headStyle.image}`}>
-                      <Image   
-                      noclick='true'              
-                      src="/images/meufchimney.png"
-                      priority
-                      layout='fill'
-                      objectFit='cover'
-                      objectPosition='bottom right'
-                      className={`${headStyle.triggerHover}`}
-                      alt='Photo statut'/>
-                      <Image   
-                      noclick='true'              
-                      src="/images/meufchimneyInvert.jpg"
-                      priority
-                      layout='fill'
-                      objectFit='cover'
-                      objectPosition='bottom right'
-                      className={`${headStyle.triggerHover} ${headStyle.imageHidden}`}
-                      alt='Photo statut'/>
+                      <div className={`${styles.positionRelative} ${styles.positionRelativeSize}`}>
+                        <Image   
+                        noclick='true'              
+                        src="/images/meufchimney.png"
+                        priority
+                        layout='fill'
+                        objectFit='cover'
+                        objectPosition='bottom right'
+                        className={`${headStyle.triggerHover}`}
+                        alt='Photo statut'/>
+                        <Image   
+                        noclick='true'              
+                        src="/images/meufchimneyInvert.jpg"
+                        priority
+                        layout='fill'
+                        objectFit='cover'
+                        objectPosition='bottom right'
+                        className={`${headStyle.triggerHover} ${headStyle.imageHidden}`}
+                        alt='Photo statut'/>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className={`${headStyle.subGlobal} ${styles.positionRelative} ${headStyle.triggerCarousel1}`}>
                   <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.margeForImg}`}>
-                    <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>A</span>daptable & collaboratif</h3>
+                    <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>A</span>daptable & <span className={`${headStyle.ligature}`}>C</span>ollaboratif</h3>
                     <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Plus qu&apos;un outil, Leny est votre nouvel allié. Une plateforme personnalisable, à votre nom, facilitant la recherche de vos clients. Les annonces de + de 3000 sites immobiliers, regroupées dans un seul et même endroit.</p>
                   </div>
                 </div>
@@ -123,18 +127,10 @@ export default function Home() {
                   <PricingSpecial></PricingSpecial>
                   <PricingPro></PricingPro>
                 </div>
-                <div className={`${headStyle.global}  ${styles.backgroundWhite} ${styles.colorBlack}`}>
-                  <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.margeForImg}`}>
-                    <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}>Des services exceptionnels</h3>
-                  </div>
-                </div>
               </Scroll>
-            </Script>
+            </AppScript>
           </main>
-
-          <footer className={styles.footer}>
-            
-          </footer>
+          {/* <Footer></Footer> */}
       </div>
   )
 };

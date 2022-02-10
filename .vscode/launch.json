@@ -1,10 +1,40 @@
+// {
+//     "configurations": [
+//     ]
+// }
+
 {
+    "version": "0.2.0",
     "configurations": [
-        {
-            "type": "pwa-chrome",
-            "name": "http://localhost:3000",
-            "request": "launch",
-            "url": "http://localhost:3000"
-        }
-    ]
-}
+
+      // {
+      //   "type": "node",
+      //   "request": "launch",
+      //   "name": "Node",
+      //   "port": 9229,
+      //   "runtimeExecutable": "npm",
+      //   "runtimeArgs": ["run-script", "dev"],
+      //   "console": "integratedTerminal"
+      // },
+      // {
+      //   "type": "chrome",
+      //   "request": "launch",
+      //   "name": "Chrome",
+      //   "url": "http://localhost:3001",
+      //   "webRoot": "${workspaceRoot}/client/src"
+      // },
+      {
+          "name": "Launch Chrome",
+          "request": "launch",
+          "type": "pwa-chrome",
+          "url": "http://localhost:3000",
+          "webRoot": "/"
+      }
+    ],
+    // "compounds": [
+    //   {
+    //     "name": "Full-stack",
+    //     "configurations": ["Node", "Chrome"]
+    //   }
+    // ]
+  }
