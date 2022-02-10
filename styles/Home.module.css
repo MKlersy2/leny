@@ -135,3 +135,8 @@ h1 span.lighter {
     width: 100%;
     height: 100%;
 }
+
+.zIndexBig {
+    background-color: white;
+    /* z-index: 9999999; */
+}

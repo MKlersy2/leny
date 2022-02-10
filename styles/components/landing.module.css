@@ -12,6 +12,11 @@
   position: relative;
 }
 
+.backgroundBlack {
+  background: #121212;
+  color: white;
+}
+
 .subGlobal {
   height: 80vh;
 }

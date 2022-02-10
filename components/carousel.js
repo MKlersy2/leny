@@ -25,9 +25,9 @@ export default function Carousel() {
                     </div>
                     <div className={carousel.boxHorizontal}>
                         <div className={`${styles.displayFlex} ${styles.flexCol} ${carousel.listeDesc}`}>
-                            <div id='carouselFst' className={`${effectStyles.appear} ${carousel.textGlobal}`}>
-                                <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>V</span>ous êtes une agence immobilière</h3>
-                                <p fadein='true' className={`${effectStyles.fromBottom} ${styles.boxParagraphe}`}>Assignez les recherches enregistrées, les estimations réalisées, les demandes d&apos;informations - via la messagerie intégrée - à un ou plusieurs de vos agents, en fonction de leur sectorisation géographique. Notre plateforme immobilière en marque blanche vous permettra de tracker et analyser les comportements de vos utilisateurs. Vos agents pourront désormais anticiper et vérifier si les confrères proposants les biens rajoutés en favoris sont ouverts ou non l&apos;inter-cabinet.</p>
+                            <div fadein='true' id='carouselFst' className={`${effectStyles.appear} ${effectStyles.fromBottom} ${carousel.textGlobal}`}>
+                                <h3 className={`${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>V</span>ous êtes une agence immobilière</h3>
+                                <p className={`${styles.boxParagraphe}`}>Assignez les recherches enregistrées, les estimations réalisées, les demandes d&apos;informations - via la messagerie intégrée - à un ou plusieurs de vos agents, en fonction de leur sectorisation géographique. Notre plateforme immobilière en marque blanche vous permettra de tracker et analyser les comportements de vos utilisateurs. Vos agents pourront désormais anticiper et vérifier si les confrères proposants les biens rajoutés en favoris sont ouverts ou non l&apos;inter-cabinet.</p>
                             </div>
                             <div id='carouselScd' className={`${effectStyles.fromBottom} ${carousel.textGlobal}`}>
                                 <h3 className={`${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>V</span>ous êtes un chasseur immobilier</h3>

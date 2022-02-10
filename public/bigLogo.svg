@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="231px" height="143px" viewBox="0 0 231 143" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 10</title>
+    <defs>
+        <linearGradient x1="49.9421123%" y1="18.6271747%" x2="49.9421123%" y2="99.8478073%" id="linearGradient-1">
+            <stop stop-color="#E8E8E8" offset="5.019399%"></stop>
+            <stop stop-color="#7A7A7A" offset="84.69%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.0269368296%" y1="50.0346437%" x2="100.038737%" y2="50.0346437%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#858585" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Plan-pricing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-10" transform="translate(0.600000, 0.905800)">
+            <g id="Group-8" transform="translate(0.000000, 2.294200)">
+                <g id="SVGID_1_-link" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                    <path d="M40.6,69.9 L40.6,20.3 C40.6,9.1 31.4,0 20.3,0 C9.1,0 -5.68434189e-14,9.2 -5.68434189e-14,20.3 L-5.68434189e-14,102.3 L-5.68434189e-14,104.6 C0.1,109.1 1.2,113.4 2.9,117.3 C8.8,130.5 24.3,139.1 38.4,139.1 L74.8,139.1 C66.7,139.1 59.3,136.3 53.5,131.7 C45.9,125.7 41,116.5 40.6,106.1 C40.6,105.7 40.6,105.3 40.6,105 C40.6,104.6 40.6,104.2 40.6,103.9 L40.6,98.5 L40.6,69.9 Z" id="SVGID_1_"></path>
+                </g>
+                <g id="SVGID_00000155143338739017771060000016485295835918085542_-link" transform="translate(40.600000, 98.300000)" fill="url(#linearGradient-2)">
+                    <path d="M27.3,0 L0.6,0 L0,0 L0,5.4 L0,7.7 C0.3,18.1 5.3,27.2 12.9,33.3 C18.7,38 26.1,40.7 34.2,40.7 L63.6,40.7 C74.8,40.7 83.9,31.5 83.9,20.4 C83.9,10.7 77,2.5 67.8,0.5 C66.4,0.2 65,0.1 63.6,0.1 L27.3,0.1 L27.3,0 Z" id="SVGID_00000155143338739017771060000016485295835918085542_"></path>
+                </g>
+            </g>
+            <text id="ENY" fill="#FFFFFF" fill-rule="nonzero" font-family="Helvetica" font-size="88.2349" font-weight="normal">
+                <tspan x="47.5852" y="86">ENY</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
