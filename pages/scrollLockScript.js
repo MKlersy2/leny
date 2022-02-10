@@ -14,3 +14,7 @@ export function unlock(o) {
     console.log("hello")
     return $('body').css('overflow-y', 'scroll');
 }
+
+export default function defaultFunction() {
+    return (<></>);
+}
