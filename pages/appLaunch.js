@@ -15,6 +15,7 @@ export default class Layout extends React.Component {
         window.scrollTo(0, 0);
       }
       var parallaxY = 0;
+      var parallaxY2 = 0;
 
       $(document).on("scroll", function() {
 
@@ -32,8 +33,10 @@ export default class Layout extends React.Component {
           imageHidden.css("opacity", "0");
         }
 
-          parallaxY = $(document).scrollTop() * 0.30;
-          $("div[parallax='true']").css("transform", "translateY("+parallaxY+"px)");
+        parallaxY = $(document).scrollTop() * .30;
+        parallaxY2 = $(document).scrollTop() * -.20;
+          $("div[parallaxtop='true']").css("transform", "translateY("+parallaxY+"px)");
+          $("div[parallaxbottom='true']").css("transform", "translateY("+parallaxY2+"px)");
 
           carouselHorizontalFunction();
           carouselVerticalFunction();

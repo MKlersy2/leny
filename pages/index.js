@@ -15,6 +15,7 @@ import PricingPro from '../components/pricing-plan/pro'
 import pricing from '../styles/components/pricing.module.css';
 import {unlock, lock} from './scrollLockScript.js'
 import Footer from '../components/footer/footer'
+import carouselHorizontal from '/styles/components/carouselHorizontal.module.css'
 
 export default function Home() {
   
@@ -41,15 +42,17 @@ export default function Home() {
                     />
                   </div>
                   <div className={headStyle.titleGlobal}>
-                    <div className={effectStyles.box}>
-                      <h1 fadein='true' onClick={lock} className={`${styles.title} ${effectStyles.fromBottom}`}>Leny <span className={styles.lighter}>déniche votre</span></h1>
-                    </div>
-                    <div className={effectStyles.box}>
-                      <h1 fadein='true' onClick={unlock} delay='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>prochain bien</span></h1>
+                    <div parallaxbottom='true'>
+                      <div className={effectStyles.box}>
+                        <h1 fadein='true' onClick={lock} className={`${styles.title} ${effectStyles.fromBottom}`}>Leny <span className={styles.lighter}>déniche votre</span></h1>
+                      </div>
+                      <div className={effectStyles.box}>
+                        <h1 fadein='true' onClick={unlock} delay='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>prochain bien</span></h1>
+                      </div>
                     </div>
                   </div>
                   <div noclick='true' className={`${headStyle.globalImage}`}>
-                    <div noclick='true' parallax='true' style={{width: '330px', height:'600px'}} className={`${headStyle.image}`}>
+                    <div noclick='true' parallaxtop='true' style={{width: '330px', height:'600px'}} className={`${headStyle.image}`}>
                       <div className={`${styles.positionRelative} ${styles.positionRelativeSize}`}>
                         <Image   
                         noclick='true'              
@@ -74,14 +77,14 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={`${headStyle.subGlobal} ${styles.positionRelative} ${headStyle.triggerCarousel1}`}>
-                  <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.margeForImg}`}>
+                  <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.margeForImg}`} parallaxbottom='true'>
                     <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>A</span>daptable & <span className={`${headStyle.ligature}`}>C</span>ollaboratif</h3>
                     <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Plus qu&apos;un outil, Leny est votre nouvel allié. Une plateforme personnalisable, à votre nom, facilitant la recherche de vos clients. Les annonces de + de 3000 sites immobiliers, regroupées dans un seul et même endroit.</p>
                   </div>
                 </div>
 
-                <div className={`${headStyle.bigGlobal} ${headStyle.stepCarousel1}`}>
-                  <div className={headStyle.global}>
+                <div className={`${headStyle.bigGlobal} ${headStyle.stepCarousel1} ${carouselHorizontal.triggerGlobal}`}>
+                  <div className={`${headStyle.global}`}>
                     <CarouselHorizontal></CarouselHorizontal>
                   </div>
                   <div className={`${headStyle.step1}`}></div>
@@ -94,8 +97,6 @@ export default function Home() {
                     <div className={`${styles.positionRelative}`}>
                       <div fadein='true' className={`${styles.geodeBigGlobal} ${effectStyles.fromBottom} ${styles.zIndex0}`}>
                           <div className={`${styles.geodeGlobal}`}>
-                            {/* <div className={`${styles.circleGlobal}`}>
-                            </div> */}
                               <Diamond></Diamond>
                           </div>
                       </div>

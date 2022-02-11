@@ -11,7 +11,6 @@ export function lock(o) {
 }
 
 export function unlock(o) {
-    console.log("hello")
     return $('body').css('overflow-y', 'scroll');
 }
 

@@ -30,9 +30,18 @@ export function carouselVerticalFunction() {
         $(`.${carousel.global} #carouselFst`).addClass(effectStyles.appear);
         $(`.${carousel.global} #carouselFst h3`).addClass(effectStyles.appear);
         $(`.${carousel.global} #carouselFst p`).addClass(effectStyles.appear);
+
+        $(`.${carousel.global} #carouselFst`).removeClass(effectStyles.fromRight);
+        $(`.${carousel.global} #carouselFst`).addClass(effectStyles.fromLeft);
+        $(`.${carousel.global} #carouselScd`).removeClass(effectStyles.fromLeft);
+        $(`.${carousel.global} #carouselScd`).addClass(effectStyles.fromRight);
+        $(`.${carousel.global} #carouselThd`).removeClass(effectStyles.fromLeft);
+        $(`.${carousel.global} #carouselThd`).addClass(effectStyles.fromRight);
+
+
       } else if(difference >= 100 && difference <= 200) {
-        $(`.${carousel.global} #carouselFst h3`).css("opacity", "0");
-        $(`.${carousel.global} #carouselFst p`).css("opacity", "0");
+        // $(`.${carousel.global} #carouselFst h3`).css("opacity", "0");
+        // $(`.${carousel.global} #carouselFst p`).css("opacity", "0");
         $(`.${carousel.global} #carouselFst`).removeClass(effectStyles.appear);
         $(`.${carousel.global} #carouselFst h3`).removeClass(effectStyles.appear);
         $(`.${carousel.global} #carouselFst p`).removeClass(effectStyles.appear);
@@ -51,6 +60,14 @@ export function carouselVerticalFunction() {
         $(`.${carousel.liste} div#step2`).addClass(`${carousel.active}`);
         $(`.${carousel.liste} div#step3`).removeClass(`${carousel.active}`);
         $(`.${carousel.liste} div#step3`).addClass(`${carousel.inactive}`);
+
+        $(`.${carousel.global} #carouselFst`).removeClass(effectStyles.fromRight);
+        $(`.${carousel.global} #carouselFst`).addClass(effectStyles.fromLeft);
+        $(`.${carousel.global} #carouselScd`).removeClass(effectStyles.fromRight);
+        $(`.${carousel.global} #carouselScd`).addClass(effectStyles.fromLeft);
+        $(`.${carousel.global} #carouselThd`).removeClass(effectStyles.fromLeft);
+        $(`.${carousel.global} #carouselThd`).addClass(effectStyles.fromRight);
+
       } else if(difference >= 201) {
         let elementLimite = $(`.${carousel.global} #carouselThd`);
         if((elementLimite.offset().top + elementLimite.outerHeight(true) >= $(`.${headStyle.triggerCarousel3}`).offset().top) && !($(`.${carousel.global}`).offset().top > $(window).scrollTop()) && $(`.${carousel.global} #carouselThd`).css("opacity") >= 0.5) {
@@ -75,6 +92,13 @@ export function carouselVerticalFunction() {
           $(`.${carousel.loader}:eq(2)`).addClass(`${carousel.loaderActive}`);
           $(`.${carousel.global}`).addClass(`${carousel.globalActive}`);
           $(`.${carousel.global}`).removeClass(`${carousel.finished}`);
+
+          $(`.${carousel.global} #carouselFst`).removeClass(effectStyles.fromRight);
+          $(`.${carousel.global} #carouselFst`).addClass(effectStyles.fromLeft);
+          $(`.${carousel.global} #carouselScd`).removeClass(effectStyles.fromRight);
+          $(`.${carousel.global} #carouselScd`).addClass(effectStyles.fromLeft);
+          $(`.${carousel.global} #carouselThd`).removeClass(effectStyles.fromRight);
+          $(`.${carousel.global} #carouselThd`).addClass(effectStyles.fromLeft);
         }
         $(`.${carousel.step}:eq(0)`).css("width", `100%`);
         $(`.${carousel.step}:eq(1)`).css("width", `100%`);
