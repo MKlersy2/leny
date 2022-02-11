@@ -170,17 +170,23 @@
     
 }
 
+.gradiant {
+    background: linear-gradient(to bottom, #121212 0%, rgba(0, 0, 0, 0) 20%);
+}
+
 .triggerGlobal {
     background-image: url(/images/carousel/AH.png);
     background-size: cover;
     background-position-x: center;
     background-position-y: 20%;
     background-repeat: no-repeat;
-    /* background: fixed; */
     background-attachment: fixed;
-  }
-
-
+    transition: background-position-y .0s;
+    -webkit-transition: background-position-y .0s;
+    -moz-transition: background-position-y .0s;
+    -ms-transition: background-position-y .0s;
+    -o-transition: background-position-y .0s;
+}
 
   .fake {
       width: 100%;

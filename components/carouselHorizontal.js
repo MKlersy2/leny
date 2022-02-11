@@ -31,29 +31,14 @@ export default function CarouselHorizontal() {
                         <div className={`${styles.displayFlex} ${styles.flexCol} ${carouselHorizontal.listeDesc}`}>
                             <div className={carouselHorizontal.fake}></div>
                             <div fadein='true' id='carouselFst' className={`${effectStyles.appear} ${effectStyles.fromNowhere} ${carouselHorizontal.textGlobal}`}>
-                                <div className={`${carouselHorizontal.geodeBigGlobal}`}>
-                                    <div className={`${carouselHorizontal.geodeGlobal}`}>
-                                        {/* <Simple></Simple> */}
-                                    </div>
-                                </div>
                                 <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>A</span>ugmentez vos conversions</h3>
                                 <p className={`${styles.boxParagraphe} ${carouselHorizontal.commentaires}`}>Votre présence quotidienne ainsi que celle de vos partenaires entre les annonces et dans les messageries de vos utilisateurs, durant toute leur recherche immobilière. Proposez vos services, au moment approprié.</p>
                             </div>
                             <div id='carouselScd' className={`${effectStyles.fromNowhere} ${carouselHorizontal.textGlobal}`}>
-                                <div className={`${carouselHorizontal.geodeBigGlobal}`}>
-                                    <div className={`${carouselHorizontal.geodeGlobal}`}>
-                                        {/* <Double></Double> */}
-                                    </div>
-                                </div>
                                 <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>B</span>oostez votre canal d&apos;acquisition</h3>
                                 <p className={`${styles.boxParagraphe} ${carouselHorizontal.commentaires}`}>Attirez de nouveaux utilisateurs en les aidant à trouver leur futur logement grâce à une alerte personnalisée, en temps réel, des nouvelles annonces mises en ligne.</p>
                             </div>
                             <div id='carouselThd' className={`${effectStyles.fromNowhere} ${carouselHorizontal.textGlobal}`}>
-                            <div className={`${carouselHorizontal.geodeBigGlobal}`}>
-                                    <div className={`${carouselHorizontal.geodeGlobal}`}>
-                                        {/* <Quadruple></Quadruple> */}
-                                    </div>
-                                </div>
                                 <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>G</span>érez vos encarts publicitaires</h3>
                                 <p className={`${styles.boxParagraphe} ${carouselHorizontal.commentaires}`}>Vous aurez la possibilité de monétiser une part de vos encarts publicitaires. Des partenariats rémunérés vous seront proposés : courtiers en prêts immobiliers, architectes, décorateurs, menuisiers, chasseurs, diagnostiqueurs, assureurs, etc.</p>
                             </div>

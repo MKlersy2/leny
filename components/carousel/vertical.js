@@ -9,10 +9,10 @@ export function carouselVerticalFunction() {
       let stepOne = $(`.${headStyle.stepCarousel2} .${headStyle.step1}`);
       $(`.${carousel.liste}`).css('height', $(`.${carousel.global} #carouselThd`).outerHeight(true) + $(`.${carousel.listeCenter}`).outerHeight(true));
 
-
-      var difference = (($(window).scrollTop() - $(`.${headStyle.stepCarousel2}`).position().top) / (stepOne.offset().top - $(`.${headStyle.stepCarousel2}`).position().top - 10)) * 100
+      var difference = (($(window).scrollTop() - $(`.${headStyle.stepCarousel2}`).position().top) / (stepOne.offset().top - $(`.${headStyle.stepCarousel2}`).position().top)) * 100
 
       if(difference < 100 && difference > 0) {
+        $(`.${headStyle.global}.${carousel.triggerGlobal}`).addClass(`${carousel.globalActive}`);
         $(`.${carousel.global} #carouselFst h3`).css("opacity", "1");
         $(`.${carousel.global} #carouselFst p`).css("opacity", "1");
         $(`.${carousel.liste} div#step1`).removeClass(`${carousel.inactive}`);
@@ -40,8 +40,7 @@ export function carouselVerticalFunction() {
 
 
       } else if(difference >= 100 && difference <= 200) {
-        // $(`.${carousel.global} #carouselFst h3`).css("opacity", "0");
-        // $(`.${carousel.global} #carouselFst p`).css("opacity", "0");
+        $(`.${headStyle.global}.${carousel.triggerGlobal}`).addClass(`${carousel.globalActive}`);
         $(`.${carousel.global} #carouselFst`).removeClass(effectStyles.appear);
         $(`.${carousel.global} #carouselFst h3`).removeClass(effectStyles.appear);
         $(`.${carousel.global} #carouselFst p`).removeClass(effectStyles.appear);
@@ -69,13 +68,17 @@ export function carouselVerticalFunction() {
         $(`.${carousel.global} #carouselThd`).addClass(effectStyles.fromRight);
 
       } else if(difference >= 201) {
-        let elementLimite = $(`.${carousel.global} #carouselThd`);
-        if((elementLimite.offset().top + elementLimite.outerHeight(true) >= $(`.${headStyle.triggerCarousel3}`).offset().top) && !($(`.${carousel.global}`).offset().top > $(window).scrollTop()) && $(`.${carousel.global} #carouselThd`).css("opacity") >= 0.5) {
+        // let elementLimite = $(`.${carousel.global} #carouselThd`);
+        // if((elementLimite.offset().top + elementLimite.outerHeight(true) >= $(`.${headStyle.triggerCarousel3}`).offset().top) && !($(`.${carousel.global}`).offset().top > $(window).scrollTop()) && $(`.${carousel.global} #carouselThd`).css("opacity") >= 0.5) {
+        let elementLimite = $(`.${carousel.triggerGlobal}`);
+        if(elementLimite.offset().top + elementLimite.outerHeight(true) <=  $(window).scrollTop() + $(window).outerHeight()) {
+          $(`.${headStyle.global}.${carousel.triggerGlobal}`).removeClass(`${carousel.globalActive}`);
           $(`.${carousel.global}`).removeClass(`${carousel.globalActive}`);
           $(`.${carousel.global}`).addClass(`${carousel.finished}`);
           $(`.${carousel.global} #carouselFst`).removeClass(effectStyles.appear);
           $(`.${carousel.global} #carouselFst h3`).removeClass(effectStyles.appear);
         } else {// if($(`.${carousel.global}`).offset().top > $(window).scrollTop())  
+          $(`.${headStyle.global}.${carousel.triggerGlobal}`).addClass(`${carousel.globalActive}`);
           $(`.${carousel.global} #carouselFst`).removeClass(effectStyles.appear);
           $(`.${carousel.global} #carouselFst h3`).removeClass(effectStyles.appear);
           $(`.${carousel.global} #carouselFst p`).removeClass(effectStyles.appear);
@@ -107,9 +110,9 @@ export function carouselVerticalFunction() {
         $(`.${carousel.step}:eq(0)`).css("width", `0`);
         $(`.${carousel.step}:eq(1)`).css("width", `0`);
         $(`.${carousel.step}:eq(2)`).css("width", `0`);
-
       }
     } else {
+      $(`.${headStyle.global}.${carousel.triggerGlobal}`).removeClass(`${carousel.globalActive}`);
       $(`.${carousel.step}:eq(0)`).css("width", `0`);
       $(`.${carousel.step}:eq(1)`).css("width", `0`);
       $(`.${carousel.step}:eq(2)`).css("width", `0`);

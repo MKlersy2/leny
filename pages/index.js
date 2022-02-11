@@ -16,6 +16,7 @@ import pricing from '../styles/components/pricing.module.css';
 import {unlock, lock} from './scrollLockScript.js'
 import Footer from '../components/footer/footer'
 import carouselHorizontal from '/styles/components/carouselHorizontal.module.css'
+import carousel from '/styles/components/carousel.module.css'
 
 export default function Home() {
   
@@ -84,7 +85,7 @@ export default function Home() {
                 </div>
 
                 <div className={`${headStyle.bigGlobal} ${headStyle.stepCarousel1} ${carouselHorizontal.triggerGlobal}`}>
-                  <div className={`${headStyle.global}`}>
+                  <div className={`${headStyle.global} ${carouselHorizontal.gradiant}`}>
                     <CarouselHorizontal></CarouselHorizontal>
                   </div>
                   <div className={`${headStyle.step1}`}></div>
@@ -109,8 +110,8 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className={`${headStyle.bigGlobal} ${headStyle.stepCarousel2}`}>
-                  <div className={headStyle.global}>
+                <div className={`${headStyle.bigGlobal} ${headStyle.stepCarousel2} ${carousel.triggerGlobal}`}>
+                  <div className={`${headStyle.global} ${carousel.gradiant}`}>
                     <Carousel></Carousel>
                   </div>
                   <div className={`${headStyle.step1}`}></div>

@@ -7,8 +7,8 @@ import headStyle from '../styles/components/landing.module.css'
 export default function Carousel() {
     return (
         <div className={`${carousel.global} ${carousel.number2}`}>
-            <div>
-                <div className={`${carousel.color} ${carousel.liste} ${styles.displayFlex} ${styles.flexCol}`}>
+            <div className={`${styles.positionRelative} ${carousel.positionCenter}`}>
+                <div className={`${carousel.color} ${carousel.liste} ${carousel.positionCenterListe} ${styles.displayFlex} ${styles.flexCol}`}>
                     <div className={`${styles.displayFlex} ${carousel.listeCenter}`}>
                         <div id='step1'>1</div>
                         <div className={`${carousel.loader} ${carousel.inactive}`}>

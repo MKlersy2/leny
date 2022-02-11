@@ -3,6 +3,8 @@ import $ from 'jquery';
 import headStyle from '../styles/components/landing.module.css';
 import {carouselHorizontalFunction} from '/components/carousel/horizontal';
 import {carouselVerticalFunction} from '/components/carousel/vertical';
+import carouselHorizontal from '/styles/components/carouselHorizontal.module.css';
+
 
 export default class Layout extends React.Component {
   

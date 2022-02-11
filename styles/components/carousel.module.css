@@ -5,8 +5,11 @@
         width: calc(100% - 30vw);
         height: min-content;
         margin: 0 15vw;
-        padding-top:100px;
     }
+    .positionCenter {
+      width: calc(100vw - 30vw);
+      height:100vh;
+  }
 }
 
 @media (max-width: 1467px) {
@@ -14,12 +17,20 @@
         width: calc(100% - 10vw);
         height: min-content;
         margin: 0 5vw;
-        padding-top:100px;
     }
+    .positionCenter {
+      width: calc(100vw - 10vw);
+      height:100vh;
+  }
 }
 
 .title {
-    margin-top:0
+    margin-top:0;
+    text-shadow: 0 0 6px black ;
+}
+
+.commentaires {
+    text-shadow: 0 0 6px black ;
 }
 
 .color {
@@ -42,6 +53,13 @@
 
 .listeCenter {
     align-items: center;
+}
+
+.positionCenterListe {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
 }
 
 .liste div:not(.loader):not(.step) {
@@ -113,3 +131,25 @@
 .number2 {
 
 }
+
+.gradiant {
+    background: linear-gradient(to bottom, #121212 0%, rgba(0, 0, 0, 0) 20%);
+}
+
+.triggerGlobal {
+    background-image: url(/images/carousel/AH.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 20%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-position-y .0s;
+    -webkit-transition: background-position-y .0s;
+    -moz-transition: background-position-y .0s;
+    -ms-transition: background-position-y .0s;
+    -o-transition: background-position-y .0s;
+}
+
+  .fake {
+      width: 100%;
+  }
