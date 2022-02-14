@@ -31,6 +31,7 @@ export function carouselVerticalFunction() {
         $(`.${carousel.global} #carouselFst h3`).addClass(effectStyles.appear);
         $(`.${carousel.global} #carouselFst p`).addClass(effectStyles.appear);
 
+
         $(`.${carousel.global} #carouselFst`).removeClass(effectStyles.fromRight);
         $(`.${carousel.global} #carouselFst`).addClass(effectStyles.fromLeft);
         $(`.${carousel.global} #carouselScd`).removeClass(effectStyles.fromLeft);
