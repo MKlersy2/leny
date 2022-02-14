@@ -75,7 +75,7 @@ export default class Layout extends React.Component {
     
 
           const faders = document.querySelectorAll("[fadein='true']");
-          const sliders = document.querySelectorAll(".slideIn");
+          const parallaxs = document.querySelectorAll("[parallaxinit='false']");
     
           const appearOptions = {
             threshold: 0,
@@ -106,11 +106,39 @@ export default class Layout extends React.Component {
           faders.forEach(fader => {
             appearOnScroll.observe(fader);
           });
-          
-          sliders.forEach(slider => {
-            appearOnScroll.observe(slider);
-          });
-    
+        
+
+          $(document).on('scroll', function() {
+            parallaxs.forEach(parallax => { 
+              checkParallax(parallax);
+            });
+          })
+          function checkParallax(parallax) {
+            const elementPrincipal = parallax.getBoundingClientRect();
+            const topElement = elementPrincipal.top;
+            const bottomElement = topElement + elementPrincipal.height;
+            
+            if(topElement < $(window).outerHeight() && bottomElement > 0) {
+
+              let value = ($(window).innerHeight() - topElement);
+              // let value =  ($(window).scrollTop() - topElement) - $(window).scrollTop()
+              
+              // let style = window.getComputedStyle(parallax);
+              // let matrix = new WebKitCSSMatrix(style.transform);
+              // console.log(matrix)
+              // let parallaxY = matrix.m42 + 2;
+              // let parallaxY2 = matrix.m42 - 2;
+              let parallaxY = value*.1;
+              let parallaxY2 = value*-.1;
+              console.log(parallaxY, parallaxY2)
+              
+              if(parallax.hasAttribute('parallaxtop')) {
+                parallax.style.transform = 'translateY('+parallaxY+'px)';
+              } else {
+                parallax.style.transform = 'translateY('+parallaxY2+'px)';
+              }
+            }
+          }
     }
     render() {
         return (

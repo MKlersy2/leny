@@ -37,11 +37,11 @@ export default class Layout extends React.Component {
 
         parallaxY = $(document).scrollTop() * .30;
         parallaxY2 = $(document).scrollTop() * -.20;
-          $("div[parallaxtop='true']").css("transform", "translateY("+parallaxY+"px)");
-          $("div[parallaxbottom='true']").css("transform", "translateY("+parallaxY2+"px)");
+          $("div[parallaxinit='true']div[parallaxtop='true']").css("transform", "translateY("+parallaxY+"px)");
+          $("div[parallaxinit='true']div[parallaxbottom='true']").css("transform", "translateY("+parallaxY2+"px)");
 
-          carouselHorizontalFunction();
-          carouselVerticalFunction();
+        carouselHorizontalFunction();
+        carouselVerticalFunction();
       });
       carouselHorizontalFunction();
       carouselVerticalFunction();
