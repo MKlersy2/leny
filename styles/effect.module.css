@@ -72,10 +72,6 @@
   opacity: 1;
 }
 
-.appear {
-  display: block !important;
-}
-
   .fromTop.appear,
   .fromBottom.appear {
     -webkit-transform: translateY(0);

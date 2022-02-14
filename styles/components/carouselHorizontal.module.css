@@ -117,6 +117,7 @@
 
 .boxHorizontal {
     width: -webkit-fill-available;
+    width: -moz-available;
     position: relative;
 }
 

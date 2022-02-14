@@ -7,7 +7,7 @@ export function carouselVerticalFunction() {
     let elementImage = $(`.${headStyle.triggerCarousel2}`);
     if(elementImage.offset().top + elementImage.outerHeight(true) < $(window).scrollTop()) {
       let stepOne = $(`.${headStyle.stepCarousel2} .${headStyle.step1}`);
-      $(`.${carousel.liste}`).css('height', $(`.${carousel.global} #carouselThd`).outerHeight(true) + $(`.${carousel.listeCenter}`).outerHeight(true));
+      $(`.${carousel.liste}`).css('height', $(`.${carousel.global} #carouselFst`).outerHeight(true) + $(`.${carousel.listeCenter}`).outerHeight(true));
 
       var difference = (($(window).scrollTop() - $(`.${headStyle.stepCarousel2}`).position().top) / (stepOne.offset().top - $(`.${headStyle.stepCarousel2}`).position().top)) * 100
 
@@ -41,6 +41,7 @@ export function carouselVerticalFunction() {
 
 
       } else if(difference >= 100 && difference <= 200) {
+
         $(`.${headStyle.global}.${carousel.triggerGlobal}`).addClass(`${carousel.globalActive}`);
         $(`.${carousel.global} #carouselFst`).removeClass(effectStyles.appear);
         $(`.${carousel.global} #carouselFst h3`).removeClass(effectStyles.appear);
@@ -69,6 +70,7 @@ export function carouselVerticalFunction() {
         $(`.${carousel.global} #carouselThd`).addClass(effectStyles.fromRight);
 
       } else if(difference >= 201) {
+
         // let elementLimite = $(`.${carousel.global} #carouselThd`);
         // if((elementLimite.offset().top + elementLimite.outerHeight(true) >= $(`.${headStyle.triggerCarousel3}`).offset().top) && !($(`.${carousel.global}`).offset().top > $(window).scrollTop()) && $(`.${carousel.global} #carouselThd`).css("opacity") >= 0.5) {
         let elementLimite = $(`.${carousel.triggerGlobal}`);
