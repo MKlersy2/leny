@@ -58,6 +58,14 @@ h1 span.lighter {
     color: black;
 }
 
+.colorWhite {
+    color: white;
+}
+
+.blendMode {
+    mix-blend-mode: difference;
+}
+
 .shadowTextWhite {
     text-shadow: 0 0 6px white;
 }
@@ -67,10 +75,17 @@ h1 span.lighter {
     height:268px;
 }
 
+.rectangle {
+    height: auto;
+    width: auto;
+    margin-top: calc(-120px - 64px);
+}
+
+
 .geodeBigGlobal {
     z-index: 0;
     position: absolute;
-    right:5%;
+    right:0;
     top:-20%;
     /* width: calc(100% - 30vw); */
     height:calc(50% - 240px);
@@ -139,4 +154,12 @@ h1 span.lighter {
 .zIndexBig {
     background-color: white;
     /* z-index: 9999999; */
+}
+
+.noSelect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
 }

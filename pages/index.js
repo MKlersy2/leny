@@ -17,6 +17,9 @@ import {unlock, lock} from './scrollLockScript.js'
 import Footer from '../components/footer/footer'
 import carouselHorizontal from '/styles/components/carouselHorizontal.module.css'
 import carousel from '/styles/components/carousel.module.css'
+import Header from '/components/header/navbar';
+import Rectangle from '../components/rectangle/rectangle'
+
 
 export default function Home() {
   
@@ -30,6 +33,7 @@ export default function Home() {
 
           <main className={styles.main}>
             <MouseFollow></MouseFollow>
+            <Header></Header>
             <AppScript>
               <Scroll>
                 <div className={headStyle.global}>
@@ -92,17 +96,18 @@ export default function Home() {
                   <div className={`${headStyle.step2}`}></div>
                   <div className={`${headStyle.step3}`}></div>
                 </div>
-                <div className={`${headStyle.triggerCarousel2} ${styles.colorBlack} ${styles.backgroundWhite}`}>
+                <div className={`${headStyle.triggerCarousel2} ${styles.colorBlack} ${styles.backgroundWhite} `}>
                   <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.marge} ${headStyle.espacement}`}>
                     <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>D</span>es services exceptionnels</h3>
                     <div className={`${styles.positionRelative}`}>
                       <div fadein='true' className={`${styles.geodeBigGlobal} ${effectStyles.fromBottom} ${styles.zIndex0}`}>
-                          <div parallax='true' parallaxinit='false' parallaxbottom='true' className={`${styles.geodeGlobal}`}>
-                              <Diamond></Diamond>
+                          <div parallax='true' parallaxinit='false' parallaxbottom='true' className={`${styles.rectangle}`}>
+                              {/* <Diamond></Diamond> */}
+                              <Rectangle></Rectangle>
                           </div>
                       </div>
-                      <div fadein='true' className={`${styles.zIndex1} ${effectStyles.fromNowhere} ${styles.positionAbsolute}`}>
-                        <p className={`${styles.boxParagraphe}`}>Générez des leads d&apos;acheteurs, vendeurs, investisseurs, bailleurs etc., de manière automatisée</p>
+                      <div fadein='true' className={`${styles.zIndex1} ${effectStyles.fromNowhere} ${styles.positionAbsolute} ${styles.noSelect} ${styles.blendMode}`}>
+                        <p className={`${styles.boxParagraphe} ${styles.colorWhite}`}>Générez des leads d&apos;acheteurs, vendeurs, investisseurs, bailleurs etc., de manière automatisée</p>
                       </div>
                       <div>
                         <p className={`${styles.boxParagraphe} ${styles.invisbleTexte}`}>Boostez et restez proche de vos prospects en proposant la meilleure alerte immobilière, depuis votre site internet ou application mobile.</p>

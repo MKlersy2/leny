@@ -58,19 +58,44 @@ export default class Layout extends React.Component {
             $(`.${mouse.subGlobal}`).css('height', '3px');
           });
     
-          $("body").on('mouseenter', `.${pricing.button}`, function() {
+          $("body").on('mouseenter', `[clickbutton='true']`, function() {
             $(`.${mouse.global}`).css('width', '30px');
             $(`.${mouse.global}`).css('height', '30px');
     
             $(`.${mouse.subGlobal}`).css('width', '30px');
             $(`.${mouse.subGlobal}`).css('height', '30px');
           });
-          $("body").on('mouseleave', `.${pricing.button}`, function() {
+          $("body").on('mouseleave', `[clickbutton='true']`, function() {
             $(`.${mouse.global}`).css('width', '40px');
             $(`.${mouse.global}`).css('height', '40px');
     
             $(`.${mouse.subGlobal}`).css('width', '3px');
             $(`.${mouse.subGlobal}`).css('height', '3px');
+          });
+
+          $("body").on('mouseenter', `[noclickbutton='true']`, function() {
+            $(`.${mouse.global}`).css('width', '40px');
+            $(`.${mouse.global}`).css('height', '40px');
+    
+            $(`.${mouse.subGlobal}`).css('width', '40px');
+            $(`.${mouse.subGlobal}`).css('height', '40px');
+          });
+          $("body").on('mouseleave', `[noclickbutton='true']`, function() {
+            $(`.${mouse.global}`).css('width', '40px');
+            $(`.${mouse.global}`).css('height', '40px');
+    
+            $(`.${mouse.subGlobal}`).css('width', '3px');
+            $(`.${mouse.subGlobal}`).css('height', '3px');
+          });
+          
+          var animationToFill = document.getElementById("animation-to-fill"),
+              animationToTordu = document.getElementById("animation-to-tordu");
+
+          $('body').on('mouseenter', '#animation-to-hover', function() { 
+            animationToFill.beginElement();
+          });
+          $('body').on('mouseleave', '#animation-to-hover', function() { 
+            animationToTordu.beginElement();
           });
     
 
@@ -119,15 +144,7 @@ export default class Layout extends React.Component {
             const bottomElement = topElement + elementPrincipal.height;
             
             if(topElement < $(window).outerHeight() && bottomElement > 0) {
-
               let value = ($(window).innerHeight() - topElement);
-              // let value =  ($(window).scrollTop() - topElement) - $(window).scrollTop()
-              
-              // let style = window.getComputedStyle(parallax);
-              // let matrix = new WebKitCSSMatrix(style.transform);
-              // console.log(matrix)
-              // let parallaxY = matrix.m42 + 2;
-              // let parallaxY2 = matrix.m42 - 2;
               let parallaxY = value*.1;
               let parallaxY2 = value*-.1;
               console.log(parallaxY, parallaxY2)

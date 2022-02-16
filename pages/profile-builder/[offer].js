@@ -78,7 +78,7 @@ function PresentationPack(props) {
           <h1 fadein='true' className={`${effectStyles.fromBottom} ${pricingPlan.boxSubtitle}`}><span className={`${headStyle.ligature}`}>N</span>otre pack {`${titleProps}`}</h1>
           <p fadein='true' className={`${effectStyles.fromNowhere} ${pricingPlan.boxParagraphe}`}>Caedibus fecit angustus aegrum aegrum.</p>
           <Link href={`https://api.vendmy.com/leny/stripe/create-checkout-session.php?url=${process.env.EXTENSION}://${process.env.HOSTNAME}${process.env.PORT}&offer=${offerProps}`}>
-              <div noclickbutton='true' className={`${pricing.button} ${pricingPlan.littleButton}`}>
+              <div clickbutton='true' className={`${pricing.button} ${pricingPlan.littleButton}`}>
                   Souscrire à l&apos;offre
               </div>
           </Link>
