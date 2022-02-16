@@ -20,7 +20,7 @@ export default function navBar() {
                         White paper
                     </div>
                     <div clickbutton='true' className={`${header.button} ${header.buttonBig}`}>
-                        Participer à l'ICO
+                        Participer à l&apos;ICO
                     </div>
                 </div>
             </div>
