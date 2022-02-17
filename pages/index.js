@@ -98,7 +98,9 @@ export default function Home() {
                 </div>
                 <div className={`${headStyle.triggerCarousel2} ${styles.colorBlack} ${styles.backgroundWhite} `}>
                   <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.marge} ${headStyle.espacement}`}>
-                    <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>D</span>es services exceptionnels</h3>
+                    <div className={`${styles.blendMode} ${styles.noSelect} ${styles.zIndex1}`}> 
+                      <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle} ${styles.colorWhite}`}><span className={`${headStyle.ligature}`}>D</span>es services exceptionnels</h3>
+                    </div>
                     <div className={`${styles.positionRelative}`}>
                       <div fadein='true' className={`${styles.geodeBigGlobal} ${effectStyles.fromBottom} ${styles.zIndex0}`}>
                           <div parallax='true' parallaxinit='false' parallaxbottom='true' className={`${styles.rectangle}`}>
