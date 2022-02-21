@@ -1,0 +1,114 @@
+.global { 
+    width: 100%;
+    position: relative;
+    color: black;
+    overflow-x: scroll;
+}
+
+.subGlobal { 
+    width: 100%;
+}
+
+.details {
+    width: auto;
+    padding: 30px;
+    background-color: #F0F0F0;
+    margin: 5px;
+}
+
+.general {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    -o-transform: rotateZ(180deg);
+}
+
+.globalDescription {
+    opacity: 0;
+    width: 0;
+    transition: width .3s, opacity .3s ;
+    -webkit-transition: width .3s, opacity .3s ;
+    -moz-transition: width .3s, opacity .3s ;
+    -ms-transition: width .3s, opacity .3s ;
+    -o-transition: width .3s, opacity .3s ;
+}
+
+.description {
+    border-top: 1px solid #CBCBCB;
+    border-bottom: 1px solid #CBCBCB;
+    margin-top:20px;
+    padding:20px 0;
+}
+
+.comment {
+    white-space: nowrap;
+}
+
+.flex {
+    justify-content: normal;
+}
+
+.flex:not(:last-child):not(:first-child) {
+    margin: 10px 0;
+}
+
+.details:hover > .globalDescription {
+    width: 100%;
+    opacity: 1;
+}
+.details:hover > .general {
+    transform: rotateZ(0deg);
+    writing-mode: inherit;
+    -webkit-writing-mode: inherit;
+    -ms-writing-mode: inherit;
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+}
+
+.button {
+    background-color: #CFCFCF;
+    color: black;
+    font-family: 'Proxima', Helvetica, sans-serif;
+    text-align: center;
+    margin: 30px 0 0 0;
+    white-space: nowrap;
+    user-select:none;
+    padding: 4px 0;
+    font-size: 18pt;
+    transition: 0.2s;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.special .button {
+    background-color: #F5C657;
+}
+
+.button:hover {
+    transform: scale(105%);
+    -webkit-transform: scale(105%);
+    -moz-transform: scale(105%);
+    -ms-transform: scale(105%);
+    -o-transform: scale(105%);
+}
+
+.button:active {
+    transform: scale(95%);
+    -webkit-transform: scale(95%);
+    -moz-transform: scale(95%);
+    -ms-transform: scale(95%);
+    -o-transform: scale(95%);
+}

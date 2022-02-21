@@ -1,6 +1,6 @@
 import styles from '/styles/Home.module.css';
 import headStyle from '/styles/components/landing.module.css'
-import Image from 'next/image';
+import Logo from '../logo/logo-simple';
 import footer from '/styles/components/footer.module.css';
 
 export default function Footer() {
@@ -9,14 +9,7 @@ export default function Footer() {
             <div className={`${styles.displayFlex} ${footer.subGlobal}`}>
                 <div className={footer.box}>
                     <div className={`${styles.positionRelative} ${styles.positionRelativeSize} ${footer.logoGlobal}`}>
-                        <Image 
-                            src={'/bigLogo.png'}
-                            width={231}
-                            alt={'Logo de leny'}
-                            priority
-                            objectFit='cover'
-                            height={143}
-                        />
+                        <Logo/>
                     </div>
                 </div>
                 <div className={footer.box}>

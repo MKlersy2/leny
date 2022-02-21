@@ -117,10 +117,15 @@
 }
 
 .boxHorizontal {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
     width: -webkit-fill-available;
+    width: -moz-available;
 }
 
 .textGlobal  {
+    padding: 0 !important;
     position: absolute;
     top: 0;
 }
@@ -152,4 +157,10 @@
 
   .fake {
       width: 100%;
+  }
+
+  @media (max-width: 354px) {
+      .commentaires {
+          text-align: left;
+      }
   }

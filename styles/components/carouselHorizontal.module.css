@@ -124,6 +124,7 @@
 .textGlobal  {
     position: absolute;
     top: 0;
+    width: 100%;
 }
 
 .geodeGlobal {
@@ -191,4 +192,16 @@
 
   .fake {
       width: 100%;
+  }
+
+  @media (max-width: 354px) {
+      .listeDesc {
+          padding: 0 !important;
+      }
+      .textGlobal {
+          padding: 0 !important;
+      }
+      .commentaires {
+          text-align: left;
+      }
   }

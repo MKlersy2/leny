@@ -1,24 +1,25 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import headStyle from '../styles/components/landing.module.css'
-import AppScript from './appScripts'
-import Scroll from './appLaunch'
-import Image from 'next/image'
-import effectStyles from '../styles/effect.module.css'
-import CarouselHorizontal from '../components/carouselHorizontal'
-import Carousel from '../components/carousel'
-import Diamond from '../components/geodes/diamond'
-import MouseFollow from '../components/mouseFollow.js'
-import PricingSpecial from '../components/pricing-plan/special'
-import PricingNormal from '../components/pricing-plan/normal'
-import PricingPro from '../components/pricing-plan/pro'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import headStyle from '../styles/components/landing.module.css';
+import AppScript from './appScripts';
+import Scroll from './appLaunch';
+import Image from 'next/image';
+import effectStyles from '../styles/effect.module.css';
+import CarouselHorizontal from '../components/carouselHorizontal';
+import Carousel from '../components/carousel';
+import Diamond from '../components/geodes/diamond';
+import MouseFollow from '../components/mouseFollow.js';
+import PricingSpecial from '../components/pricing-plan/special';
+import PricingNormal from '../components/pricing-plan/normal';
+import PricingPro from '../components/pricing-plan/pro';
 import pricing from '../styles/components/pricing.module.css';
-import {unlock, lock} from './scrollLockScript.js'
-import Footer from '../components/footer/footer'
-import carouselHorizontal from '/styles/components/carouselHorizontal.module.css'
-import carousel from '/styles/components/carousel.module.css'
+import {unlock, lock} from './scrollLockScript.js';
+import Footer from '../components/footer/footer';
+import carouselHorizontal from '/styles/components/carouselHorizontal.module.css';
+import carousel from '/styles/components/carousel.module.css';
 import Header from '/components/header/navbar';
-import Rectangle from '../components/rectangle/rectangle'
+import Rectangle from '../components/rectangle/rectangle';
+import PricingMobile from '../components/pricing-plan/mobile';
 
 
 export default function Home() {
@@ -56,7 +57,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div noclick='true' className={`${headStyle.globalImage}`}>
+                  <div noclick='true' className={`${headStyle.globalImage} ${styles.imagePresentation}`}>
                     <div noclick='true' parallax='true' parallaxtop='true' parallaxinit='true' style={{width: '330px', height:'600px'}} className={`${headStyle.image}`}>
                       <div className={`${styles.positionRelative} ${styles.positionRelativeSize}`}>
                         <Image   
@@ -131,11 +132,16 @@ export default function Home() {
                     <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Lorem Ipsum is é aaàæsimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>
                   </div>
                 </div>
-                  <div className={`${styles.displayFlex} ${pricing.marginGlobal} ${styles.backgroundWhite} ${styles.positionRelative} ${styles.zIndexBig}`}>
-                    <PricingNormal></PricingNormal>
-                    <PricingSpecial></PricingSpecial>
-                    <PricingPro></PricingPro>
-                  </div>
+                <div className={`${styles.displayFlex} ${pricing.marginGlobal} ${styles.backgroundWhite} ${styles.positionRelative} ${styles.zIndexBig} ${styles.listingPrix}`}>
+                  <PricingNormal></PricingNormal>
+                  <PricingSpecial></PricingSpecial>
+                  <PricingPro></PricingPro>
+                </div>
+
+                <div className={`${styles.displayFlex} ${pricing.marginGlobal} ${styles.backgroundWhite} ${styles.positionRelative} ${styles.zIndexBig} ${styles.listingPrixMobile}`}>
+                  <PricingMobile></PricingMobile>
+                </div>
+
               </Scroll>
             </AppScript>
             <Footer></Footer>

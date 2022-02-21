@@ -1,6 +1,6 @@
 import styles from '../../styles//Home.module.css';
-import headStyle from '../../styles/components/landing.module.css';
 import pricing from '../../styles/components/pricing.module.css';
+import pricingGeneral from '../../styles/components/pricingGeneral.module.css';
 import Valid from './valid'
 import Disagree from './disagree'
 import effectStyles from '../../styles/effect.module.css'
@@ -34,42 +34,42 @@ export default function PricingSpecial() {
             <div className={`${pricing.info} ${styles.colorWhite} ${pricing.special}`}>
                 <div className={pricing.subInfo}>
                     <div className={pricing.header}>
-                        <div className={`${pricing.title} ${styles.displayFlex}`}>
+                        <div className={`${pricingGeneral.title} ${styles.displayFlex}`}>
                             <div>
-                                <h3 className={pricing.h3}>Agence</h3>
-                                <p className={pricing.p}>
-                                    <span className={pricing.bold}>05</span> <span className={pricing.lite}>services</span>
+                                <h3 className={pricingGeneral.h3}>Agence</h3>
+                                <p className={pricingGeneral.p}>
+                                    <span className={pricingGeneral.bold}>05</span> <span className={pricingGeneral.lite}>services</span>
                                 </p>
                             </div>
                             <div>
-                                <p className={pricing.price}>119€</p>
+                                <p className={pricingGeneral.price}>119€</p>
                             </div>
                         </div>
-                        <div className={`${pricing.title} ${styles.displayFlex}`}>
+                        <div className={`${pricingGeneral.title} ${styles.displayFlex}`}>
                             <div className={`${pricing.offer}`}>
                                 <div className={`${styles.displayFlex} ${pricing.flex}`}>
                                     <div className={pricing.state}><Valid></Valid></div>
-                                    <div className={pricing.comment}><span className={pricing.lite}>Agrégateur en</span> <span className={pricing.bold}>marque blanche</span></div>
+                                    <div className={pricingGeneral.comment}><span className={pricingGeneral.lite}>Agrégateur en</span> <span className={pricingGeneral.bold}>marque blanche</span></div>
                                 </div>
                                 <div className={`${styles.displayFlex} ${pricing.flex}`}>
                                     <div className={pricing.state}><Valid></Valid></div>
-                                    <div className={pricing.comment}><span className={pricing.bold}>Dashboard</span> <span className={pricing.lite}>agent</span></div>
+                                    <div className={pricingGeneral.comment}><span className={pricingGeneral.bold}>Dashboard</span> <span className={pricingGeneral.lite}>agent</span></div>
                                 </div>
                                 <div className={`${styles.displayFlex} ${pricing.flex}`}>
                                     <div className={pricing.state}><Valid></Valid></div>
-                                    <div className={pricing.comment}><span className={pricing.bold}>Extranet</span> <span className={pricing.lite}>acheteur</span></div>
+                                    <div className={pricingGeneral.comment}><span className={pricingGeneral.bold}>Extranet</span> <span className={pricingGeneral.lite}>acheteur</span></div>
                                 </div>
                                 <div className={`${styles.displayFlex} ${pricing.flex}`}>
                                     <div className={pricing.state}><Valid></Valid></div>
-                                    <div className={pricing.comment}><span className={pricing.lite}>Visualisation des</span> <span className={pricing.bold}>leads</span> <span className={pricing.lite}>recherche</span></div>
+                                    <div className={pricingGeneral.comment}><span className={pricingGeneral.lite}>Visualisation des</span> <span className={pricingGeneral.bold}>leads</span> <span className={pricingGeneral.lite}>recherche</span></div>
                                 </div>
                                 <div className={`${styles.displayFlex} ${pricing.flex}`}>
                                     <div className={pricing.state}><Valid></Valid></div>
-                                    <div className={pricing.comment}><span className={pricing.lite}>Partage du compte jusqu&apos;à</span> <span className={pricing.bold}>5 agents</span></div>
+                                    <div className={pricingGeneral.comment}><span className={pricingGeneral.lite}>Partage du compte jusqu&apos;à</span> <span className={pricingGeneral.bold}>5 agents</span></div>
                                 </div>
                                 <div className={`${styles.displayFlex} ${pricing.flex} ${pricing.unvailable}`}>
                                     <div className={pricing.state}><Disagree></Disagree></div>
-                                    <div className={pricing.comment}><span className={pricing.lite}>Publicité</span> <span className={pricing.bold}>partenaires</span> <span className={pricing.lite}>intégrées</span></div>
+                                    <div className={pricingGeneral.comment}><span className={pricingGeneral.lite}>Publicité</span> <span className={pricingGeneral.bold}>partenaires</span> <span className={pricingGeneral.lite}>intégrées</span></div>
                                 </div>
                             </div>
                         </div>

@@ -3,18 +3,113 @@
     background-color: #121212;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     padding:20px 10vw;
     align-items: center;
     justify-content: space-between;
     z-index: 9999;
     font-size: 12pt;
+    text-align: center;
     font-family: dinRegular;
 }
 
-.subGlobal {
+@media (max-width:500px) {
+    .global {
+        padding: 22px;
+    }
+    .whitePaper { 
+        display: none;
+    }
+}
 
+.left{
+    margin: 0 30px;
+    height: 100%;
+    text-align: left;
+}
+
+.right {
+
+}
+
+.logoGlobal {
+    height: 100%;
+}
+
+.logo:hover .circle {
+    animation-play-state: running;
+}
+
+.circle {
+    animation-duration: 3s;
+    animation-name: rotateCircle;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+    fill: transparent;
+    animation-iteration-count: infinite;
+    -webkit-transform-origin-y: calc(100% / 2);
+    -webkit-transform-origin-x: calc(100% / 2);
+}
+
+.fillIn {
+    opacity:0;
+    stroke-dasharray: 735;
+    animation: textDraw 4s cubic-bezier(.56,-0.04,.32,.7) forwards;
+    -webkit-animation: textDraw 4s cubic-bezier(.56,-0.04,.32,.7) forwards;
+}
+
+@keyframes textDraw {
+    0%{
+        fill:rgb(255, 255, 255, 0);
+        stroke:#fff;
+        stroke-dashoffset: 800;
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+        stroke-dashoffset: 0;
+        fill:rgb(255, 255, 255, 0.0);
+    }
+    100%{
+        fill:rgb(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes rotateCircle {
+    0% {
+        transform:scale(100%);
+        -webkit-transform:scale(100%);
+        -moz-transform:scale(100%);
+        -ms-transform:scale(100%);
+        -o-transform:scale(100%);
+}
+    50% {
+        transform: scale(115%);
+        -webkit-transform: scale(115%);
+        -moz-transform: scale(115%);
+        -ms-transform: scale(115%);
+        -o-transform: scale(115%);
+}
+100% {
+    transform:scale(100%);
+    -webkit-transform:scale(100%);
+    -moz-transform:scale(100%);
+    -ms-transform:scale(100%);
+    -o-transform:scale(100%);
+}
+}
+
+.logo {
+    height: inherit;
+    width: auto;
+    overflow: initial;
+}
+
+.subGlobal {
+    height: 100%;
 }
 
 .button {
@@ -40,4 +135,9 @@
 .buttonBig:hover {
     background-color: white;
     color: black;
+}
+
+.noInteract {
+    user-select: none;
+    pointer-events: none;
 }

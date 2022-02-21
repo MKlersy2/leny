@@ -9,14 +9,14 @@ export default function navBar() {
         <div className={`${header.global} ${styles.displayFlex}`}>
             <div className={`${header.left}`}>
                 <div className={`${header.subGlobal}`}>
-                    <div className={`${header.logo}`}>
+                    <div clickbutton='true' className={`${header.logoGlobal}`}>
                         <Logo></Logo>
                     </div>
                 </div>
             </div>
             <div className={`${header.right}`}>
                 <div className={`${header.subGlobal} ${styles.displayFlex}`}>
-                    <div clickbutton='true' className={`${header.button} ${header.buttonLite}`}>
+                    <div clickbutton='true' className={`${header.button} ${header.buttonLite} ${header.whitePaper}`}>
                         White paper
                     </div>
                     <div clickbutton='true' className={`${header.button} ${header.buttonBig}`}>
