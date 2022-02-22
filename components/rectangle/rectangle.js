@@ -11,7 +11,7 @@ export default function Rectangle() {
                     <pattern id="pattern-38y-6askk7-1" patternUnits="objectBoundingBox" height="104.010899%" width="100%">
                         <use xlinkHref="#image-38y-6askk7-2"></use>
                     </pattern>
-                    <image id="image-38y-6askk7-2" width="528" height="525" xlinkHref="/images/rectangle_momo_background.png"></image>
+                    <image id="image-38y-6askk7-2" width="528" height="525" xlinkHref="/images/rectangle_momo_2_background.png"></image>
                 </defs>
                 <g noclick='true' noclickbutton='true' id='animation-to-hover' stroke="none" strokeWidth="1" fill="none" fillRule="even">
                     <polygon noclick='true' noclickbutton='true'  id="Rectangle" fill="url(#pattern-38y-6askk7-1)"  points="245 0 528 0 283 525 0 525">

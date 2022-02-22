@@ -50,10 +50,10 @@ export default function Home() {
                   <div className={headStyle.titleGlobal}>
                     <div parallax='true' parallaxbottom='true' parallaxinit='true'>
                       <div className={effectStyles.box}>
-                        <h1 fadein='true' className={`${styles.title} ${effectStyles.fromBottom}`}>Leny <span className={styles.lighter}>déniche votre</span></h1>
+                        <h1 fadein='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>Une nouvelle</span> ère</h1>
                       </div>
                       <div className={effectStyles.box}>
-                        <h1 fadein='true' delay='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>prochain bien</span></h1>
+                        <h1 fadein='true' delay='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>de collaboration</span></h1>
                       </div>
                     </div>
                   </div>
