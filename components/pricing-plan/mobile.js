@@ -86,7 +86,7 @@ export default function Mobile() {
                                 <div className={`${pricingGeneral.comment} ${pricingMobile.comment}`}><span className={pricingGeneral.lite}>Publicité</span> <span className={pricingGeneral.bold}>partenaires</span> <span className={pricingGeneral.lite}>intégrées</span></div>
                             </div>
                         </div>
-                        <Link href='/profile-builder/normal' passHref>
+                        <Link href='/profile-builder/special' passHref>
                             <div clickbutton='true' className={`${pricingMobile.button}`}>
                                 Essai gratuit
                             </div>
@@ -127,7 +127,7 @@ export default function Mobile() {
                                 <div className={`${pricingGeneral.comment} ${pricingMobile.comment}`}><span className={pricingGeneral.lite}>Publicité</span> <span className={pricingGeneral.bold}>partenaires</span> <span className={pricingGeneral.lite}>intégrées</span></div>
                             </div>
                         </div>
-                        <Link href='/profile-builder/normal' passHref>
+                        <Link href='/profile-builder/pro' passHref>
                             <div clickbutton='true' className={`${pricingMobile.button}`}>
                                 Essai gratuit
                             </div>

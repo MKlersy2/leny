@@ -147,7 +147,6 @@ export default class Layout extends React.Component {
               let value = ($(window).innerHeight() - topElement);
               let parallaxY = value*.1;
               let parallaxY2 = value*-.1;
-              console.log(parallaxY, parallaxY2)
               
               if(parallax.hasAttribute('parallaxtop')) {
                 parallax.style.transform = 'translateY('+parallaxY+'px)';
