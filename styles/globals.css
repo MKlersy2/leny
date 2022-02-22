@@ -93,6 +93,12 @@ body {
     cursor: none;
 }
 
+@media (max-width: 1024px) {
+  html, body {
+    cursor: default;
+  }
+}
+
 body {
   overflow-x: hidden;
 }
