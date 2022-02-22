@@ -17,10 +17,6 @@
   color: white;
 }
 
-.subGlobal {
-  height: 80vh;
-}
-
 .titleGlobal {
   color:white;
   position: absolute;
@@ -106,6 +102,10 @@
     padding-left:5vw;
     padding-right:5vw;
   }
+
+  .subGlobal {
+    height: 80vh;
+  }
 }
 
 @media (max-width: 800px) {
@@ -117,6 +117,10 @@
   .marge {
     padding-left:2vw;
     padding-right:2vw;
+  }
+
+  .subGlobal {
+    height: auto;
   }
 }
 
