@@ -117,8 +117,8 @@
 }
 
 .boxHorizontal {
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-x: visible;
     height: 100%;
     width: -webkit-fill-available;
     width: -moz-available;
@@ -143,7 +143,7 @@
 
 .triggerGlobal {
     background-image: url(/images/carousel/AH.png);
-    background-size: cover;
+    background-size: 100% auto;
     background-position-x: center;
     background-position-y: 20%;
     background-repeat: no-repeat;
