@@ -186,6 +186,7 @@
         background-size: 130% auto;
         /* background-position-x: center;
         background-position-y: 20%; */
+        background-position-x: right;
         background-repeat: no-repeat;
         /* background-attachment: fixed; */
         transition: background-position-y .0s;

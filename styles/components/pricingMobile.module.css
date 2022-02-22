@@ -29,7 +29,7 @@
 
 .globalDescription {
     opacity: 0;
-    width: 0;
+    width: 79px;
     transition: width .3s, opacity .3s ;
     -webkit-transition: width .3s, opacity .3s ;
     -moz-transition: width .3s, opacity .3s ;
