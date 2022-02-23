@@ -138,7 +138,7 @@ export default function Home() {
                   <PricingPro></PricingPro>
                 </div>
 
-                <div className={`${styles.displayFlex} ${pricing.marginGlobal} ${styles.backgroundWhite} ${styles.positionRelative} ${styles.zIndexBig} ${styles.listingPrixMobile}`}>
+                <div className={`${styles.displayFlex} ${pricing.marginPrice} ${styles.backgroundWhite} ${styles.positionRelative} ${styles.zIndexBig} ${styles.listingPrixMobile}`}>
                   <PricingMobile></PricingMobile>
                 </div>
 

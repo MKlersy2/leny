@@ -202,6 +202,9 @@
   }
 
   @media (max-width: 354px) {
+    .listeDesc {
+        padding: 0 !important;
+    }
       .commentaires {
           text-align: left;
       }

@@ -51,6 +51,9 @@ export default function Mobile() {
                             </div>
                         </Link>
                     </div>
+                    <div className={`${pricingMobile.priceInit} ${pricingGeneral.price}`}>
+                        89 €
+                    </div>
                 </div>
                 <div className={`${pricingMobile.details} ${pricingMobile.special}`}>
                     <div className={`${pricingMobile.general}`}>
@@ -77,7 +80,7 @@ export default function Mobile() {
                                 <div className={pricingMobile.state}><Valid></Valid></div>
                                 <div className={`${pricingGeneral.comment} ${pricingMobile.comment}`}><span className={pricingGeneral.lite}>Visualisation des</span> <span className={pricingGeneral.bold}>leads</span> <span className={pricingGeneral.lite}>recherche</span></div>
                             </div>
-                            <div className={`${styles.displayFlex} ${pricingMobile.flex} ${pricingGeneral.unvailable}`}>
+                            <div className={`${styles.displayFlex} ${pricingMobile.flex}`}>
                                 <div className={pricingMobile.state}><Valid></Valid></div>
                                 <div className={`${pricingGeneral.comment} ${pricingMobile.comment}`}><span className={pricingGeneral.lite}>Partage du compte jusqu&apos;à</span> <span className={pricingGeneral.bold}>5 agents</span></div>
                             </div>
@@ -91,6 +94,9 @@ export default function Mobile() {
                                 Essai gratuit
                             </div>
                         </Link>
+                    </div>
+                    <div className={`${pricingMobile.priceInit} ${pricingGeneral.price}`}>
+                        119 €
                     </div>
                 </div>
                 <div className={pricingMobile.details}>
@@ -118,11 +124,11 @@ export default function Mobile() {
                                 <div className={pricingMobile.state}><Valid></Valid></div>
                                 <div className={`${pricingGeneral.comment} ${pricingMobile.comment}`}><span className={pricingGeneral.lite}>Visualisation des</span> <span className={pricingGeneral.bold}>leads</span> <span className={pricingGeneral.lite}>recherche</span></div>
                             </div>
-                            <div className={`${styles.displayFlex} ${pricingMobile.flex} ${pricingGeneral.unvailable}`}>
+                            <div className={`${styles.displayFlex} ${pricingMobile.flex}`}>
                                 <div className={pricingMobile.state}><Valid></Valid></div>
                                 <div className={`${pricingGeneral.comment} ${pricingMobile.comment}`}><span className={pricingGeneral.lite}>Partage du compte jusqu&apos;à</span> <span className={pricingGeneral.bold}>5 agents</span></div>
                             </div>
-                            <div className={`${styles.displayFlex} ${pricingMobile.flex} ${pricingGeneral.unvailable}`}>
+                            <div className={`${styles.displayFlex} ${pricingMobile.flex}`}>
                                 <div className={pricingMobile.state}><Valid></Valid></div>
                                 <div className={`${pricingGeneral.comment} ${pricingMobile.comment}`}><span className={pricingGeneral.lite}>Publicité</span> <span className={pricingGeneral.bold}>partenaires</span> <span className={pricingGeneral.lite}>intégrées</span></div>
                             </div>
@@ -132,6 +138,9 @@ export default function Mobile() {
                                 Essai gratuit
                             </div>
                         </Link>
+                    </div>
+                    <div className={`${pricingMobile.priceInit} ${pricingGeneral.price}`}>
+                        149 €
                     </div>
                 </div>
             </div>
