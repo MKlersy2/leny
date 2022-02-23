@@ -38,13 +38,11 @@
 
 
   .fromTop {
-    /* grid-column: 2 / 3; */
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
   }
   
   .fromBottom {
-    /* grid-column: 3 / 4; */
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
   }

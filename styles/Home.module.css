@@ -119,7 +119,6 @@ h1 span.lighter {
     position: absolute;
     right:0;
     top:-20%;
-    /* width: calc(100% - 30vw); */
     height:calc(50% - 240px);
 }
 
@@ -185,7 +184,6 @@ h1 span.lighter {
 
 .zIndexBig {
     background-color: white;
-    /* z-index: 9999999; */
 }
 
 .noSelect {

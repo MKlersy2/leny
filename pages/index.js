@@ -105,7 +105,6 @@ export default function Home() {
                     <div className={`${styles.positionRelative}`}>
                       <div fadein='true' className={`${styles.geodeBigGlobal} ${effectStyles.fromBottom} ${styles.zIndex0}`}>
                           <div parallax='true' parallaxinit='false' parallaxbottom='true' className={`${styles.rectangle}`}>
-                              {/* <Diamond></Diamond> */}
                               <Rectangle></Rectangle>
                           </div>
                       </div>
