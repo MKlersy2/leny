@@ -45,10 +45,26 @@ export default class Layout extends React.Component {
       });
       carouselHorizontalFunction();
       carouselVerticalFunction();
+
+
+      var animationToFill = document.querySelector("[animationto='fill']"),
+      animationToTordu = document.querySelector("[animationto='tordu']");
+
+      $('body').on('mouseenter', "[animationtype='hover']", function() { 
+        console.log(animationToFill)
+        animationToFill.beginElement();
+      });
+      $('body').on('mouseleave', "[animationtype='hover']", function() { 
+        console.log(animationToTordu)
+        animationToTordu.beginElement();
+      });
+
     }
 
     componentWillUnmount() {
-      $(document).off("scroll")
+      $(document).off("scroll");
+      $(document).off("mouseenter");
+      $(document).off("mouseleave");
     }
 
     render() {

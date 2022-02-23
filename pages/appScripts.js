@@ -87,16 +87,6 @@ export default class Layout extends React.Component {
             $(`.${mouse.subGlobal}`).css('width', '3px');
             $(`.${mouse.subGlobal}`).css('height', '3px');
           });
-          
-          var animationToFill = document.getElementById("animation-to-fill"),
-              animationToTordu = document.getElementById("animation-to-tordu");
-
-          $('body').on('mouseenter', '#animation-to-hover', function() { 
-            animationToFill.beginElement();
-          });
-          $('body').on('mouseleave', '#animation-to-hover', function() { 
-            animationToTordu.beginElement();
-          });
     
 
           const faders = document.querySelectorAll("[fadein='true']");
@@ -163,6 +153,15 @@ export default class Layout extends React.Component {
             }
           }
     }
+
+
+    componentWillUnmount() {
+      $(document).off("scroll");
+      $(document).off("mouseenter");
+      $(document).off("mouseleave");
+    }
+
+
     render() {
         return (
             <div>{this.props.children}</div>
