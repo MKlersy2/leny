@@ -1,6 +1,7 @@
 .global {
     position: fixed;
     background-color: #121212;
+    color: white;
     top: 0;
     left: 0;
     width: 100vw;

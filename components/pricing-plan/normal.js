@@ -52,7 +52,7 @@ export default function PricingNormal() {
                                     <div className={pricing.state}><Valid></Valid></div>
                                     <div className={pricingGeneral.comment}><span className={pricingGeneral.lite}>Visualisation des</span> <span className={pricingGeneral.bold}>leads</span> <span className={pricingGeneral.lite}>recherche</span></div>
                                 </div>
-                                <div className={`${styles.displayFlex} ${pricing.flex} ${pricing.unvailable}`}>
+                                <div className={`${styles.displayFlex} ${pricing.flex} ${pricingGeneral.unvailable}`}>
                                     <div className={pricing.state}><Disagree></Disagree></div>
                                     <div className={pricingGeneral.comment}><span className={pricingGeneral.lite}>Partage du compte jusqu&apos;à</span> <span className={pricingGeneral.bold}>5 agents</span></div>
                                 </div>

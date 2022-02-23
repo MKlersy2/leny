@@ -1,0 +1,33 @@
+.presentation {
+    width:100%;
+    height:70vh;
+    position: relative;
+}
+
+.global {
+
+}
+
+.shelf { 
+    width: 100%;
+    height: 100%;
+}
+
+.subPresentation {
+    width: 100%;
+}
+
+.line {
+    /* margin:50px auto; */
+    text-align: center;
+    width:100%;
+    height: 100%;
+}
+
+.titleMarge { 
+    margin: 100px 0;
+}
+
+.shelf { 
+    height: 100vh
+}

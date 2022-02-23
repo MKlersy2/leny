@@ -3,7 +3,7 @@ import $ from 'jquery';
 import mouse from '../styles/components/mouseFollow.module.css';
 import effectStyles from '../styles/effect.module.css';
 import headStyle from '../styles/components/landing.module.css';
-import pricing from '../styles/components/pricing.module.css';
+import header from '/styles/components/header.module.css';
 
 
 export default class Layout extends React.Component {
@@ -132,11 +132,18 @@ export default class Layout extends React.Component {
             appearOnScroll.observe(fader);
           });
         
+          let scrollTopPosition = 0;
 
           $(document).on('scroll', function() {
             parallaxs.forEach(parallax => { 
               checkParallax(parallax);
             });
+            if(scrollTopPosition > $(window).scrollTop()) {
+              $('.'+header.global).css('transform', 'translateY(0)');
+            } else {
+              $('.'+header.global).css('transform', 'translateY(-100%)');
+            }
+            scrollTopPosition = $(window).scrollTop();
           })
           function checkParallax(parallax) {
             const elementPrincipal = parallax.getBoundingClientRect();
