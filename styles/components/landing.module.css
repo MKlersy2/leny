@@ -4,12 +4,14 @@
 
 .global {
   height: 100vh;
+  background-image: linear-gradient(180deg, #3B3317 0%, #373017 0%, #262214 6%, #1B1913 12%, #141412 24%, #121212 37%);
 }
 
 .bigGlobal {
   height: 500vh;
-  background: #121212;
   position: relative;
+  background: #121212;
+
 }
 
 .backgroundBlack {
@@ -63,7 +65,7 @@
 }
 
 .globalImage {
-
+  /* position: relative; */
 }
 
 .image:hover {

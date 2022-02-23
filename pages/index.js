@@ -69,7 +69,7 @@ export default function Home() {
                         alt='Photo statut'/>
                         <Image   
                         noclick='true'              
-                        src="/images/meufchimneyInvert.jpg"
+                        src="/images/meufchimneyInvert.png"
                         priority
                         layout='fill'
                         objectFit='cover'
