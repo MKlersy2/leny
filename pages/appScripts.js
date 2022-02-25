@@ -131,7 +131,7 @@ export default class Layout extends React.Component {
             if(scrollTopPosition > $(window).scrollTop()) {
               $('.'+header.global).css('transform', 'translateY(0)');
             } else {
-              $('.'+header.global).css('transform', 'translateY(-100%)');
+              if($(window).scrollTop() >= 1) $('.'+header.global).css('transform', 'translateY(-100%)');
             }
             scrollTopPosition = $(window).scrollTop();
           })

@@ -37,7 +37,22 @@ export default function Equipe() {
                             </div>
                         </div>
                         <div className={`${equipe.shelf} ${headStyle.marge} ${effectStyles.box}`}>
-                            
+                            <div className={equipe.subShelf}>
+                                <div className={equipe.member}>
+                                    <div className={equipe.photo}>
+                                        <Image
+                                            width={147}
+                                            height={220}
+                                            alt={'Image portrait de loic'}
+                                            src={'/images/members/loic.png'}
+                                        />
+                                    </div>
+                                    <div className={equipe.description}>
+                                        <h3 className={`${equipe.name}`}>Loic</h3>
+                                        <p className={equipe.activity}>Lorem</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </main>
                 </Script>

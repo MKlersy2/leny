@@ -18,7 +18,6 @@
 }
 
 .line {
-    /* margin:50px auto; */
     text-align: center;
     width:100%;
     height: 100%;
@@ -30,4 +29,41 @@
 
 .shelf { 
     height: 100vh
+}
+
+.subShelf {
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 272px;
+}
+
+.member {
+    width: 148px;
+}
+
+.photo {
+    width:100%;
+    height: 220px;
+}
+
+.description {
+    width: 100%;
+    height: 42px;
+    padding-top: 10px;
+}
+
+.name {
+    font-size: 20pt;
+    margin:0;
+    padding:0;
+    line-height: 1;
+    font-family: 'Proxima';
+}
+
+.activity {
+    font-size: 15pt;
+    margin:0;
+    padding:0;
+    line-height: 1;
+    font-family: 'Proxima';
 }
