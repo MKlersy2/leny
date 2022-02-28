@@ -42,7 +42,7 @@ export default function Equipe({teamList}) {
                         <div className={`${equipe.shelf} ${headStyle.marge} ${effectStyles.box}`}>
                             <div className={`${equipe.subShelf} ${styles.displayFlex}`}>
                                 {teamList.map((member) => (
-                                    <div className={equipe.member}>
+                                    <div key={member.id} className={equipe.member}>
                                         <div className={equipe.photo}>
                                             <Image
                                                 width={147}
