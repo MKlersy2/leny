@@ -52,6 +52,6 @@ main().catch((e) => {
     await prisma.$disconnect()
 })
 
-export default function prisma() {
+export default function PrismaExample() {
     return (<></>)
 }
