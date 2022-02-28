@@ -48,10 +48,10 @@ export default function Home() {
                   <div className={headStyle.titleGlobal}>
                     <div parallax='true' parallaxbottom='true' parallaxinit='true'>
                       <div className={effectStyles.box}>
-                        <h1 fadein='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>Une nouvelle</span> ère</h1>
+                        <h1 fadein='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>Le</span> secret <span className={styles.lighter}>le mieux</span></h1>
                       </div>
                       <div className={effectStyles.box}>
-                        <h1 fadein='true' delay='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>de collaboration</span></h1>
+                        <h1 fadein='true' delay='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>gardé des agents</span></h1>
                       </div>
                     </div>
                   </div>
