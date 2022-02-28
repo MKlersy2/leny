@@ -132,6 +132,7 @@ h3 {
   font-size: 30pt;
   font-family: 'Proxima', Helvetica, sans-serif;
   font-weight: 600;
+  margin-bottom: 0.5em;
 }
 
 p {
@@ -140,6 +141,7 @@ p {
   font-weight: light;
   line-height: 44px;
   text-align: justify;
+  letter-spacing: .8px;
 }
 
 ::-webkit-scrollbar {

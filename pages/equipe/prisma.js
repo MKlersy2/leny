@@ -1,5 +1,4 @@
 const { PrismaClient } = require('@prisma/client');
-const { data } = require('jquery');
 const prisma = new PrismaClient();
 
 async function main() {
@@ -31,18 +30,18 @@ async function main() {
 
     // console.dir(allUsers, {depth: null})
 
-    await prisma.user.update({
-        where: {email: 'mathieu@vendmy.com'},
-        data: {profile:{update: {role: 'CTO'}} }
-    })
-    await prisma.user.update({
-        where: {email: 'adrien@vendmy.com'},
-        data: {profile:{update: {role: 'CEO'}} }
-    })
-    await prisma.user.update({
-        where: {email: 'morgane@vendmy.com'},
-        data: {profile:{update: {role: 'Design'}} }
-    })
+    // await prisma.user.update({
+    //     where: {email: 'mathieu@vendmy.com'},
+    //     data: {profile:{update: {role: 'CTO'}} }
+    // })
+    // await prisma.user.update({
+    //     where: {email: 'adrien@vendmy.com'},
+    //     data: {profile:{update: {role: 'CEO'}} }
+    // })
+    // await prisma.user.update({
+    //     where: {email: 'morgane@vendmy.com'},
+    //     data: {profile:{update: {role: 'Design'}} }
+    // })
 
 }
 

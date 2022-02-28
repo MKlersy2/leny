@@ -7,7 +7,13 @@ export function carouselHorizontalFunction() {
     let elementImageHorizontal = $(`.${headStyle.triggerCarousel1}`);
     if(elementImageHorizontal.offset().top + elementImageHorizontal.outerHeight(true) < $(window).scrollTop()) {
       let stepOne = $(`.${headStyle.stepCarousel1} .${headStyle.step1}`);
-      $(`.${carouselHorizontal.liste}`).css('height', $(`.${carouselHorizontal.global} #carouselThd`).outerHeight(true));
+      if($(`.${carouselHorizontal.global} #carouselThd`).outerHeight(true) > 297) {
+        $(`.${carouselHorizontal.liste}`).css('height', $(`.${carouselHorizontal.global} #carouselThd`).outerHeight(true));
+        $(`.${carouselHorizontal.fake}`).css('height', $(`.${carouselHorizontal.global} #carouselThd`).outerHeight(true) - 40);
+      } else {
+        $(`.${carouselHorizontal.liste}`).css('height', '297px');
+        $(`.${carouselHorizontal.fake}`).css('height', '257px');
+      }
       
       var differenceHorizontal = (($(window).scrollTop() - $(`.${headStyle.stepCarousel1}`).position().top) / (stepOne.offset().top - $(`.${headStyle.stepCarousel1}`).position().top)) * 100
       if(differenceHorizontal < 100 && differenceHorizontal > 0) {

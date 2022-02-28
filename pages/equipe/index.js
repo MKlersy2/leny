@@ -1,3 +1,5 @@
+const { PrismaClient } = require('@prisma/client');
+const prisma = new PrismaClient();
 import Head from "next/head";
 import Image from "next/image";
 import styles from '../../styles/Home.module.css';
@@ -6,9 +8,10 @@ import MouseFollow from '../../components/mouseFollow.js'
 import Header from '/components/header/navbar';
 import equipe from '../../styles/components/equipe.module.css';
 import effectStyles from '../../styles/effect.module.css';
+
 import headStyle from '../../styles/components/landing.module.css';
 
-export default function Equipe() {
+export default function Equipe({teamList}) {
     return(
 
         <div className={styles.container}>
@@ -37,21 +40,23 @@ export default function Equipe() {
                             </div>
                         </div>
                         <div className={`${equipe.shelf} ${headStyle.marge} ${effectStyles.box}`}>
-                            <div className={equipe.subShelf}>
-                                <div className={equipe.member}>
-                                    <div className={equipe.photo}>
-                                        <Image
-                                            width={147}
-                                            height={220}
-                                            alt={'Image portrait de loic'}
-                                            src={'/images/members/loic.png'}
-                                        />
+                            <div className={`${equipe.subShelf} ${styles.displayFlex}`}>
+                                {teamList.map((member) => (
+                                    <div className={equipe.member}>
+                                        <div className={equipe.photo}>
+                                            <Image
+                                                width={147}
+                                                height={220}
+                                                alt={`Image portrait de ${member.user.name}`}
+                                                src={`/images/members/${member.user.name}.png`}
+                                            />
+                                        </div>
+                                        <div className={equipe.description}>
+                                            <h3 className={`${equipe.name}`}>{member.user.name}</h3>
+                                            <p className={equipe.activity}>{member.role}</p>
+                                        </div>
                                     </div>
-                                    <div className={equipe.description}>
-                                        <h3 className={`${equipe.name}`}>Loic</h3>
-                                        <p className={equipe.activity}>Lorem</p>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </main>
@@ -59,4 +64,16 @@ export default function Equipe() {
         </div>
 
     );
+}
+
+export const getServerSideProps = async () => {
+    const teamList = await prisma.profile.findMany({
+        where: {
+            rank: 'Team'
+        },
+        include: {
+            user: true
+        }
+    })
+    return {props: { teamList }}
 }
