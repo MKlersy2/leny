@@ -60,7 +60,7 @@ export default function Home() {
                       <div className={`${styles.positionRelative} ${styles.positionRelativeSize}`}>
                         <Image   
                         noclick='true'              
-                        src="/images/meufchimney.png"
+                        src="/images/boxHomepage.png"
                         priority
                         layout='fill'
                         objectFit='cover'
@@ -69,7 +69,7 @@ export default function Home() {
                         alt='Photo statut'/>
                         <Image   
                         noclick='true'              
-                        src="/images/meufchimneyInvert.png"
+                        src="/images/boxHomepage.png"
                         priority
                         layout='fill'
                         objectFit='cover'
@@ -82,8 +82,8 @@ export default function Home() {
                 </div>
                 <div className={`${headStyle.subGlobal} ${styles.positionRelative} ${headStyle.triggerCarousel1}`}>
                   <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.margeForImg}`} parallax='true' parallaxinit='false' parallaxbottom='true'>
-                    <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>A</span>daptable & <span className={`${headStyle.ligature}`}>C</span>ollaboratif</h3>
-                    <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Plus qu&apos;un outil, Leny est votre nouvel allié. Une plateforme personnalisable, à votre nom, facilitant la recherche de vos clients. Les annonces de + de 3000 sites immobiliers, regroupées dans un seul et même endroit.</p>
+                    <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>P</span>ensé par des pros, pour des pros</h3>
+                    <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Plus qu&apos;un outil, Leny est votre nouvel allié. Accédez à l&apos;intégralité du marché, aux biens de vos partenaires et à l&apos;offre Off-Market. Dénichez la pépite de vos clients et immergez-les dans l&apos;univers Leny en restant leur unique interlocuteur</p>
                   </div>
                 </div>
 
