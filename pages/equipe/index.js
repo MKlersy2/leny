@@ -66,7 +66,7 @@ export default function Equipe({teamList}) {
     );
 }
 
-export const getStaticPaths = async () => {
+export const getServerSideProps = async () => {
     const teamList = await prisma.profile.findMany({
         where: {
             rank: 'Team'
