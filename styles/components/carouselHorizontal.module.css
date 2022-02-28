@@ -81,6 +81,7 @@
 
 .liste .horizontal {
     flex-direction: column !important;
+    min-height: 297px;
 }
 
 .loader {

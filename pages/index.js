@@ -51,7 +51,7 @@ export default function Home() {
                         <h1 fadein='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>Le</span> secret <span className={styles.lighter}>le mieux</span></h1>
                       </div>
                       <div className={effectStyles.box}>
-                        <h1 fadein='true' delay='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>gardé des agents</span></h1>
+                        <h1 fadein='true' delay='true' className={`${styles.title} ${effectStyles.fromBottom}`}><span className={styles.lighter}>gardé des agents.</span></h1>
                       </div>
                     </div>
                   </div>
@@ -82,8 +82,8 @@ export default function Home() {
                 </div>
                 <div className={`${headStyle.subGlobal} ${styles.positionRelative} ${headStyle.triggerCarousel1}`}>
                   <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.margeForImg}`} parallax='true' parallaxinit='false' parallaxbottom='true'>
-                    <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>P</span>ensé par des pros, pour des pros</h3>
-                    <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Plus qu&apos;un outil, Leny est votre nouvel allié. Accédez à l&apos;intégralité du marché, aux biens de vos partenaires et à l&apos;offre Off-Market. Dénichez la pépite de vos clients et immergez-les dans l&apos;univers Leny en restant leur unique interlocuteur</p>
+                    <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>P</span>ensé par des pros, pour des pros.</h3>
+                    <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Plus qu&apos;un outil, Leny est votre nouvel allié. Accédez à l&apos;intégralité du marché, aux biens de vos partenaires et à l&apos;offre Off-Market. Dénichez la pépite de vos clients et immergez-les dans l&apos;univers Leny, en restant leur unique interlocuteur.</p>
                   </div>
                 </div>
 
@@ -98,7 +98,7 @@ export default function Home() {
                 <div className={`${headStyle.triggerCarousel2} ${styles.colorBlack} ${styles.backgroundWhite} `}>
                   <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.marge} ${headStyle.espacement}`}>
                     <div className={`${styles.blendMode} ${styles.noSelect} ${styles.zIndex1}`}> 
-                      <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle} ${styles.colorWhite}`}><span className={`${headStyle.ligature}`}>D</span>es services exceptionnels</h3>
+                      <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle} ${styles.colorWhite}`}><span className={`${headStyle.ligature}`}>D</span>es services exceptionnels.</h3>
                     </div>
                     <div className={`${styles.positionRelative}`}>
                       <div fadein='true' className={`${styles.geodeBigGlobal} ${effectStyles.fromBottom} ${styles.zIndex0}`}>
@@ -125,7 +125,7 @@ export default function Home() {
                 </div>
                 <div className={`${styles.positionRelative} ${headStyle.triggerCarousel3} ${styles.colorBlack} ${styles.backgroundWhite}`}>
                   <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.marge}`}>
-                    <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>D</span>es services exceptionnels</h3>
+                    <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>D</span>es services exceptionnels.</h3>
                     <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Lorem Ipsum is é aaàæsimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>
                   </div>
                 </div>

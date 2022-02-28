@@ -27,8 +27,14 @@
 
 @font-face {
   font-family: 'dinCondensed';
-  font-style: light;
+  font-style: normal;
   src: url('../public/police/dinCondensed/D-DINCondensed.otf') format("truetype");
+}
+
+@font-face {
+  font-family: 'dinCondensed';
+  font-style: light;
+  src: url('../public/police/dinCondensed/DINCond-LightRegular.otf') format("truetype");
 }
 
 @font-face {
@@ -131,6 +137,7 @@ h3 {
 p {
   font-size: 30px;
   font-family: 'dinCondensed';
+  font-weight: light;
   line-height: 44px;
   text-align: justify;
 }
