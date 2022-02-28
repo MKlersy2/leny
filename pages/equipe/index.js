@@ -48,7 +48,7 @@ export default function Equipe({teamList}) {
                                                 width={147}
                                                 height={220}
                                                 alt={`Image portrait de ${member.user.name}`}
-                                                src={`/images/members/${member.user.name}.png`}
+                                                src={`/images/members/${member.user.name.toLowerCase()}.png`}
                                             />
                                         </div>
                                         <div className={equipe.description}>
