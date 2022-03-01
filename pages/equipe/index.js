@@ -1,5 +1,5 @@
 const { PrismaClient } = require('@prisma/client');
-const prisma = new PrismaClient();
+// const prisma = new PrismaClient();
 import Head from "next/head";
 import Image from "next/image";
 import styles from '../../styles/Home.module.css';
@@ -66,7 +66,20 @@ export default function Equipe({teamList}) {
     );
 }
 
-export const getServerSideProps = async () => {
+// export const getServerSideProps = async () => {
+//     const teamList = await prisma.profile.findMany({
+//         where: {
+//             rank: 'Team'
+//         },
+//         include: {
+//             user: true
+//         }
+//     })
+//     return {props: { teamList }}
+// }
+
+export async function getStaticProps() {
+    const prisma = new PrismaClient()
     const teamList = await prisma.profile.findMany({
         where: {
             rank: 'Team'
@@ -75,5 +88,5 @@ export const getServerSideProps = async () => {
             user: true
         }
     })
-    return {props: { teamList }}
+    return { props: { teamList } }
 }

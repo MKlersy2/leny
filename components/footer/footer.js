@@ -58,7 +58,7 @@ export default function Footer() {
                         </div>
                         <div className={footer.liste}>
                             <div className={footer.subListe}>
-                                <Link href={'/equipe/'}>
+                                <Link href={'/equipe/'} passHref>
                                     <div clickbutton='true' >L&apos;équipe</div>
                                 </Link>
                             </div>
