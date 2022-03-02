@@ -98,7 +98,7 @@ export default function Home() {
                 <div className={`${headStyle.triggerCarousel2} ${styles.colorBlack} ${styles.backgroundWhite} `}>
                   <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.marge} ${headStyle.espacement}`}>
                     <div className={`${styles.blendMode} ${styles.noSelect} ${styles.zIndex1}`}> 
-                      <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle} ${styles.colorWhite}`}><span className={`${headStyle.ligature}`}>D</span>es services exceptionnels.</h3>
+                      <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle} ${styles.colorWhite}`}><span className={`${headStyle.ligature}`}>L</span>e chasseur immobilier digital et pertinent.</h3>
                     </div>
                     <div className={`${styles.positionRelative}`}>
                       <div fadein='true' className={`${styles.geodeBigGlobal} ${effectStyles.fromBottom} ${styles.zIndex0}`}>
@@ -107,7 +107,7 @@ export default function Home() {
                           </div>
                       </div>
                       <div fadein='true' className={`${styles.zIndex1} ${effectStyles.fromNowhere} ${styles.positionAbsolute} ${styles.noSelect} ${styles.blendMode}`}>
-                        <p className={`${styles.boxParagraphe} ${styles.colorWhite}`}>Générez des leads d&apos;acheteurs, vendeurs, investisseurs, bailleurs etc., de manière automatisée</p>
+                        <p className={`${styles.boxParagraphe} ${styles.colorWhite}`}>Leny est le nouvel écosystème qui fluidifie le marché immobilier. En donnant accès à l&apos;entièreté de l&apos;offre immobilière, votre nouvel allié devient un véritable chasseur efficace et complet. Collaborer entre agences devient utile, et récompensé.</p>
                       </div>
                       <div>
                         <p className={`${styles.boxParagraphe} ${styles.invisbleTexte}`}>Boostez et restez proche de vos prospects en proposant la meilleure alerte immobilière, depuis votre site internet ou application mobile.</p>
