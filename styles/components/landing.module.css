@@ -1,17 +1,19 @@
 .global {
   height: 100vh;
-  background-image: linear-gradient(180deg, #3B3317 0%, #373017 0%, #262214 6%, #1B1913 12%, #141412 24%, #121212 37%);
+  /* background-image: linear-gradient(180deg, #503810 0%, #3f2a15 6%, #352719 12%, #030303 24%, #000000 37%); */
+  background-image: radial-gradient(farthest-side at left top, #06064b 0%, #060528 12%, #010115 19%, #000000 30%, #000000);
+  /* background: #000000 */
 }
 
 .bigGlobal {
   height: 500vh;
   position: relative;
-  background: #121212;
+  background: #000000;
 
 }
 
 .backgroundBlack {
-  background: #121212;
+  background: #000000;
   color: white;
 }
 

@@ -187,7 +187,7 @@
 }
 
 .gradiant {
-    background: linear-gradient(to bottom, #121212 0%, rgba(0, 0, 0, 0) 20%);
+    background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0) 20%);
 }
 @media (min-width: 1024px) {
     .triggerGlobal {
@@ -206,7 +206,7 @@
 }
 @media (max-width: 1023px) {
     .positionCenter {
-        background: linear-gradient(to bottom, #121212 0%, rgba(0, 0, 0, 0) 20%);
+        background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0) 20%);
 
     }
     .global:before {
