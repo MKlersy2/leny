@@ -3,17 +3,14 @@ import headStyle from '/styles/components/landing.module.css'
 import Logo from '../logo/logo-simple';
 import footer from '/styles/components/footer.module.css';
 import Link from 'next/link';
+import React from 'react';
 
 export default function Footer() {
     return (
         <footer className={`${footer.global} ${headStyle.backgroundBlack}`}>
             <div className={`${styles.displayFlex} ${footer.subGlobal}`}>
                 <div className={footer.box}>
-                    <Link href={'/'} passHref>
-                        <div className={`${styles.positionRelative} ${styles.positionRelativeSize} ${footer.logoGlobal}`}>
-                            <Logo/>
-                        </div>
-                    </Link>
+                    <ActiveLink></ActiveLink>
                 </div>
                 <div className={footer.box}>
                     <div className={footer.subBox}>
@@ -65,7 +62,7 @@ export default function Footer() {
                             <div className={footer.subListe}>
                                 Ipsum
                             </div>
-                            <div className={footer.subListe}>
+                            <div className={footer.subListe}> 
                                 Dummy
                             </div>
                         </div>
@@ -75,3 +72,21 @@ export default function Footer() {
         </footer>
     )
 }
+
+import { useRouter } from 'next/router'
+
+export function ActiveLink() {
+  const router = useRouter()
+     return (
+
+            <Link replace href={router.pathname === '/' ? '#' : '/'} passHref>
+                <div clickbutton='true' router={router.pathname} className={`${styles.positionRelative} ${styles.positionRelativeSize} ${footer.logoGlobal}`}>
+                    <Logo/>
+                </div>
+            </Link>
+
+     
+     )
+
+}
+   

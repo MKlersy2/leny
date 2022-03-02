@@ -28,28 +28,34 @@
 }
 
 .shelf { 
-    height: 100vh
+    margin: 100px 0;
+    height: max-content;
+    overflow: visible;
 }
 
 .subShelf {
     /* background-color: aquamarine; */
     width: 100%;
-    height: 272px;
+    height: calc(371px + 57px);
     justify-content: space-evenly;
 }
 
+.globalMember {
+    height: calc(371px + 57px);
+}
+
 .member {
-    width: 148px;
+    width: 250px;
 }
 
 .photo {
     width:100%;
-    height: 220px;
+    /* height: 371px; */
 }
 
 .description {
     width: 100%;
-    height: 42px;
+    height: 57px;
     padding-top: 10px;
 }
 

@@ -2,10 +2,6 @@ import carouselHorizontal from '../styles/components/carouselHorizontal.module.c
 import styles from '../styles/Home.module.css'
 import effectStyles from '../styles/effect.module.css'
 import headStyle from '../styles/components/landing.module.css'
-import Image from 'next/image'
-import Simple from './geodes/simple'
-import Double from './geodes/double'
-import Quadruple from './geodes/quadruple'
 
 
 export default function CarouselHorizontal() {

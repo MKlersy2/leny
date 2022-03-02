@@ -123,7 +123,9 @@ export default class Layout extends React.Component {
           });
         
           let scrollTopPosition = 0;
-
+          
+          var parallaxOriginPos = 0;
+          var parallaxOriginNeg = 0;
           $(document).on('scroll', function() {
             parallaxs.forEach(parallax => { 
               checkParallax(parallax);
@@ -134,6 +136,13 @@ export default class Layout extends React.Component {
               if($(window).scrollTop() >= 1) $('.'+header.global).css('transform', 'translateY(-100%)');
             }
             scrollTopPosition = $(window).scrollTop();
+
+
+            parallaxOriginPos = $(document).scrollTop() * .10;
+            parallaxOriginNeg = $(document).scrollTop() * -.10;
+            $("div[parallaxorig='true']div[parallaxtop='true']").css("transform", "translateY("+parallaxOriginPos+"px)");
+            $("div[parallaxorig='true']div[parallaxbottom='true']").css("transform", "translateY("+parallaxOriginNeg+"px)");
+
           })
           function checkParallax(parallax) {
             const elementPrincipal = parallax.getBoundingClientRect();

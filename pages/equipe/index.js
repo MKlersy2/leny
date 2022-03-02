@@ -8,12 +8,11 @@ import MouseFollow from '../../components/mouseFollow.js'
 import Header from '/components/header/navbar';
 import equipe from '../../styles/components/equipe.module.css';
 import effectStyles from '../../styles/effect.module.css';
-
 import headStyle from '../../styles/components/landing.module.css';
+import Footer from "../../components/footer/footer";
 
 export default function Equipe({teamList}) {
     return(
-
         <div className={styles.container}>
             <Head>
                 <title>Notre équipe - Leny</title>
@@ -22,61 +21,56 @@ export default function Equipe({teamList}) {
             </Head>
             <MouseFollow></MouseFollow>
             <Header></Header>
+            <main className={styles.main}>
                 <Script>
-                    <main className={styles.main}>
-                        <div className={equipe.presentation}>
-                            <div className={`${equipe.subPresentation} ${effectStyles.box} ${headStyle.titleGlobal}`}>
-                                <h1 fadein='true' className={`${styles.title} ${effectStyles.fromBottom} ${equipe.titleMarge}`}><span className={styles.lighter}>Votre</span> équipe</h1>
-                                <div className={equipe.line}>
-                                    <Image
-                                        src={'/images/equipe/line.png'}
-                                        alt={'Ligne séparatrice'}
-                                        width={1051}
-                                        height={131.68}
-                                    />
-                                </div>
-                            </div>
-                            <div className={equipe.subPresentation}>
+                    <div className={equipe.presentation}>
+                        <div className={`${equipe.subPresentation} ${effectStyles.box} ${headStyle.titleGlobal}`}>
+                            <h1 fadein='true' className={`${styles.title} ${effectStyles.fromBottom} ${equipe.titleMarge}`}><span className={styles.lighter}>Votre</span> équipe</h1>
+                            <div className={equipe.line}>
+                                <Image
+                                    src={'/images/equipe/line.png'}
+                                    alt={'Ligne séparatrice'}
+                                    width={1051}
+                                    height={131.68}
+                                />
                             </div>
                         </div>
-                        <div className={`${equipe.shelf} ${headStyle.marge} ${effectStyles.box}`}>
-                            <div className={`${equipe.subShelf} ${styles.displayFlex}`}>
-                                {teamList.map((member) => (
-                                    <div key={member.id} className={equipe.member}>
-                                        <div className={equipe.photo}>
-                                            <Image
-                                                width={147}
-                                                height={220}
-                                                alt={`Image portrait de ${member.user.name}`}
-                                                src={`/images/members/${member.user.name.toLowerCase()}.png`}
-                                            />
+                        <div className={equipe.subPresentation}>
+                        </div>
+                    </div>
+                    <div className={`${equipe.shelf} ${headStyle.marge} ${effectStyles.box}`}>
+                        <div className={`${equipe.subShelf} ${styles.displayFlex}`}>
+                            {teamList.map((member, index) => (
+                                <div key={member.id} className={equipe.member}>
+                                    <ConditionalWrapper condition={index % 2 === 0}>
+                                        <div className={equipe.photo} noclick='true'>
+                                            <div className={`${styles.positionRelative}`} noclick='true' noclickbutton='true'>
+                                                <Image
+                                                    noclick='true'
+                                                    noclickbutton='true'
+                                                    blurDataURL=""
+                                                    width={250}
+                                                    height={371}
+                                                    alt={`Image portrait de ${member.user.name}`}
+                                                    src={`/images/members/${member.user.name.toLowerCase()}.png`}
+                                                />
+                                            </div>
                                         </div>
                                         <div className={equipe.description}>
                                             <h3 className={`${equipe.name}`}>{member.user.name}</h3>
                                             <p className={equipe.activity}>{member.role}</p>
                                         </div>
-                                    </div>
-                                ))}
-                            </div>
+                                    </ConditionalWrapper>
+                                </div>
+                            ))}
                         </div>
-                    </main>
+                    </div>
                 </Script>
+                <Footer></Footer>
+            </main>
         </div>
-
     );
 }
-
-// export const getServerSideProps = async () => {
-//     const teamList = await prisma.profile.findMany({
-//         where: {
-//             rank: 'Team'
-//         },
-//         include: {
-//             user: true
-//         }
-//     })
-//     return {props: { teamList }}
-// }
 
 export async function getStaticProps() {
     const prisma = new PrismaClient()
@@ -89,4 +83,16 @@ export async function getStaticProps() {
         }
     })
     return { props: { teamList } }
+}
+
+const ConditionalWrapper = ({ children, condition }) => {
+    return condition ? (
+        <div parallax='true' parallaxorig='true' parallaxbottom='true' className={equipe.globalMember}>
+            {children}
+        </div>
+    ) : (
+        <div parallax='true' parallaxorig='true' parallaxtop='true'>
+            {children}
+        </div>
+    )
 }

@@ -36,7 +36,7 @@ export default function Home() {
             <AppScript>
               <Scroll>
                 <div className={headStyle.global}>
-                  <div className={`${styles.positionRelative} ${styles.positionRelativeSize}`}>
+                  <div className={`${styles.positionRelative} ${styles.positionRelativeSize} ${styles.noSelect}`}>
                     <Image
                       src="/images/background-line.svg"
                       priority
@@ -57,7 +57,7 @@ export default function Home() {
                   </div>
                   <div noclick='true' className={`${headStyle.globalImage} ${styles.imagePresentation}`}>
                     <div noclick='true' parallax='true' parallaxtop='true' parallaxinit='true' style={{width: '330px', height:'600px'}} className={`${headStyle.image}`}>
-                      <div className={`${styles.positionRelative} ${styles.positionRelativeSize}`}>
+                      <div noclick='true' className={`${styles.positionRelative} ${styles.positionRelativeSize}`}>
                         <Image   
                         noclick='true'              
                         src="/images/boxHomepage.png"
