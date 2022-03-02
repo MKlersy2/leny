@@ -27,16 +27,16 @@ export default function CarouselHorizontal() {
                         <div className={`${styles.displayFlex} ${styles.flexCol} ${carouselHorizontal.listeDesc}`}>
                             <div className={carouselHorizontal.fake}></div>
                             <div fadein='true' id='carouselFst' className={`${effectStyles.appear} ${effectStyles.fromNowhere} ${carouselHorizontal.textGlobal}`}>
-                                <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>A</span>ugmentez vos conversions</h3>
-                                <p className={`${styles.boxParagraphe} ${carouselHorizontal.commentaires}`}>Votre présence quotidienne ainsi que celle de vos partenaires entre les annonces et dans les messageries de vos utilisateurs, durant toute leur recherche immobilière. Proposez vos services, au moment approprié.</p>
+                                <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>E</span>toffez votre offre</h3>
+                                <p className={`${styles.boxParagraphe} ${carouselHorizontal.commentaires}`}>Grâce à Leny et son scrapper innovant, donnez accès à la sélection de biens la plus complète du marché. Les biens commercialisés par des professionnels et des particuliers deviennent accessibles. En adhérant à une offre premium, présentez les biens off-market à vos clients en toute confidentialité.</p>
                             </div>
                             <div id='carouselScd' className={`${effectStyles.fromNowhere} ${carouselHorizontal.textGlobal}`}>
-                                <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>B</span>oostez votre canal d&apos;acquisition</h3>
-                                <p className={`${styles.boxParagraphe} ${carouselHorizontal.commentaires}`}>Attirez de nouveaux utilisateurs en les aidant à trouver leur futur logement grâce à une alerte personnalisée, en temps réel, des nouvelles annonces mises en ligne.</p>
+                                <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>R</span>écoltez l&apos;essentiel et laissez le superflu</h3>
+                                <p className={`${styles.boxParagraphe} ${carouselHorizontal.commentaires}`}>Votre temps est précieux : Leny s&apos;occupe pour vous de collecter les informations essentielles qui constituent les recherches de vos clients. Quand ils renseignent les critères qui feront la perfection de leur futur nid, Leny génère automatiquement la demande, vous n&apos;avez plus qu&apos;à explorer les options qui leur correspondent.</p>
                             </div>
                             <div id='carouselThd' className={`${effectStyles.fromNowhere} ${carouselHorizontal.textGlobal}`}>
-                                <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>G</span>érez vos encarts publicitaires</h3>
-                                <p className={`${styles.boxParagraphe} ${carouselHorizontal.commentaires}`}>Vous aurez la possibilité de monétiser une part de vos encarts publicitaires. Des partenariats rémunérés vous seront proposés : courtiers en prêts immobiliers, architectes, décorateurs, menuisiers, chasseurs, diagnostiqueurs, assureurs, etc.</p>
+                                <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>D</span>evenez indispensable</h3>
+                                <p className={`${styles.boxParagraphe} ${carouselHorizontal.commentaires}`}>La magie opère quand vous utilisez Leny, l&apos;outil de croisement le plus abouti qui vous donne accès aux biens de vos confrères, des particuliers de votre ville, et aux biens &laquo; secrets &raquo;. En recevant une sélection inédite, directement par whatsapp, mail ou sms, votre client sort du brouillard. Trouvez un bien n&apos;a jamais été aussi facile.</p>
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,3 @@
-.title {
-  font-size: 20pt;
-}
-
 .global {
   height: 100vh;
   background-image: linear-gradient(180deg, #3B3317 0%, #373017 0%, #262214 6%, #1B1913 12%, #141412 24%, #121212 37%);
@@ -23,12 +19,13 @@
   color:white;
   position: absolute;
   top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  left:15vw;
+  width: calc(100vw - 30vw - 330px);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
 .subTitleGlobal {
@@ -45,8 +42,8 @@
 
 .image {
   position: absolute;
-  top:499px;
-  right: 10vw;
+  top:30vh;
+  right: 15vw;
   border-radius: var(--md,16.66667vw 16.66667vw 0 0) var(--n-md,25vw 25vw 0 0);
   overflow: hidden;
   transition: border-radius 0.5s;
@@ -120,7 +117,10 @@
     padding-left:2vw;
     padding-right:2vw;
   }
-
+  .titleGlobal {
+    width: calc(100vw - 30vw);
+    text-align: center;
+  }
   .subGlobal {
     height: auto;
   }
