@@ -34,8 +34,8 @@ export default function Carousel() {
                                 <p className={`${styles.boxParagraphe} ${carousel.commentaires}`}>Avec Leny, vous partagez avec vos clients un lien dédié à votre agence et à votre nom. Votre compte peut être multi-utilisateurs au sein de votre agence, ainsi vos agents restent un interlocuteur unique tout au long de la recherche de vos clients, en étant en mesure de proposer un pool de biens correspondants, à votre image.</p>
                             </div>
                             <div id='carouselThd' className={`${effectStyles.fromRight} ${carousel.textGlobal}`}>
-                                <h3 className={`${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>V</span>ous êtes un courtier</h3>
-                                <p className={`${styles.boxParagraphe} ${carousel.commentaires}`}>Attirez de nouveaux utilisateurs en les aidant à trouver leur futur logement, grâce à un outil automatisant les alertes personnalisées en temps réel. Proposez vos services au moment approprié.</p>
+                                <h3 className={`${styles.boxSubtitle} ${carousel.title}`}><span className={`${headStyle.ligature}`}>L</span>orem ipsum</h3>
+                                <p className={`${styles.boxParagraphe} ${carousel.commentaires}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem.</p>
                             </div>
                         </div>
                     </div>
