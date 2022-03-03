@@ -36,7 +36,6 @@
 .subShelf {
     /* background-color: aquamarine; */
     width: 100%;
-    height: calc(371px + 57px);
     justify-content: space-evenly;
 }
 
@@ -46,6 +45,7 @@
 
 .member {
     width: 250px;
+    margin-bottom: 40px;
 }
 
 .photo {
@@ -73,4 +73,24 @@
     padding:0;
     line-height: 1;
     font-family: 'Proxima';
+}
+
+.titleGlobal {
+    text-align: center;
+    color:white;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1114px) {
+    .subShelf {
+        flex-wrap: wrap;
+    }
 }

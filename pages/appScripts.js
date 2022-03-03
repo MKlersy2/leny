@@ -140,10 +140,32 @@ export default class Layout extends React.Component {
 
             parallaxOriginPos = $(document).scrollTop() * .10;
             parallaxOriginNeg = $(document).scrollTop() * -.10;
-            $("div[parallaxorig='true']div[parallaxtop='true']").css("transform", "translateY("+parallaxOriginPos+"px)");
-            $("div[parallaxorig='true']div[parallaxbottom='true']").css("transform", "translateY("+parallaxOriginNeg+"px)");
 
-          })
+            parallaxOrigineTop.forEach(origineTop => {
+              console.log(origineTop.attributes.limitesize.value, window.innerWidth);
+              if(origineTop.hasAttribute('limitesize')) {
+                let sizeLimit =  parseInt(origineTop.attributes.limitesize.value);
+                window.innerWidth > sizeLimit ? origineTop.style.transform = `translateY(${parallaxOriginPos}px)` : null;
+              } else {
+                origineTop.style.transform = `translateY(${parallaxOriginPos}px)`
+              }
+            });
+            parallaxOrigineBot.forEach(origineBot => {
+              console.log(origineBot.attributes.limitesize.value);
+              if(origineBot.hasAttribute('limitesize')) {
+                let sizeLimit =  parseInt(origineBot.attributes.limitesize.value);
+                window.innerWidth > sizeLimit ? origineBot.style.transform = `translateY(${parallaxOriginNeg}px)` : null;
+              } else {
+                origineBot.style.transform = `translateY(${parallaxOriginNeg}px)`;
+              }
+            });
+  
+          });
+
+
+          let parallaxOrigineTop = document.querySelectorAll("div[parallaxorig='true'][parallaxtop='true']");
+          let parallaxOrigineBot = document.querySelectorAll("div[parallaxorig='true'][parallaxbottom='true']");
+
           function checkParallax(parallax) {
             const elementPrincipal = parallax.getBoundingClientRect();
             const topElement = elementPrincipal.top;

@@ -69,7 +69,7 @@ export default function Home() {
                         alt='Photo statut'/>
                         <Image   
                         noclick='true'              
-                        src="/images/boxHomepage.png"
+                        src="/images/boxHomepage2.png"
                         priority
                         layout='fill'
                         objectFit='cover'

@@ -24,7 +24,7 @@ export default function Equipe({teamList}) {
             <main className={styles.main}>
                 <Script>
                     <div className={equipe.presentation}>
-                        <div className={`${equipe.subPresentation} ${effectStyles.box} ${headStyle.titleGlobal}`}>
+                        <div className={`${equipe.subPresentation} ${effectStyles.box} ${equipe.titleGlobal}`}>
                             <h1 fadein='true' className={`${styles.title} ${effectStyles.fromBottom} ${equipe.titleMarge}`}><span className={styles.lighter}>Votre</span> équipe</h1>
                             <div className={equipe.line}>
                                 <Image
@@ -87,11 +87,11 @@ export async function getStaticProps() {
 
 const ConditionalWrapper = ({ children, condition }) => {
     return condition ? (
-        <div parallax='true' parallaxorig='true' parallaxbottom='true' className={equipe.globalMember}>
+        <div parallax='true' parallaxorig='true' parallaxbottom='true' limitesize='520' className={equipe.globalMember}>
             {children}
         </div>
     ) : (
-        <div parallax='true' parallaxorig='true' parallaxtop='true'>
+        <div parallax='true' parallaxorig='true' parallaxtop='true' limitesize='520' className={equipe.globalMember}>
             {children}
         </div>
     )
