@@ -32,7 +32,7 @@ export default function CarouselHorizontal() {
                             </div>
                             <div id='carouselScd' className={`${effectStyles.fromNowhere} ${carouselHorizontal.textGlobal}`}>
                                 <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>F</span>ocus sur l&apos;essentiel.</h3>
-                                <p className={`${styles.boxParagraphe} ${carouselHorizontal.commentaires}`}>Votre temps est précieux : Leny collecte toutes les informations nécessaires à la constitution de votre base acquéreur. L&apos;enregistrement automatique de leur critères de recherche vous permet de rester concentré sur l&apos;essentiel : votre métier.</p>
+                                <p className={`${styles.boxParagraphe} ${carouselHorizontal.commentaires}`}>Votre temps est précieux Leny collecte toutes les informations nécessaires à la constitution de votre base acquéreur. L&apos;enregistrement automatique de leur critères de recherche vous permet de rester concentré sur l&apos;essentiel : votre métier.</p>
                             </div>
                             <div id='carouselThd' className={`${effectStyles.fromNowhere} ${carouselHorizontal.textGlobal}`}>
                                 <h3 className={`${styles.boxSubtitle} ${carouselHorizontal.title}`}><span className={`${headStyle.ligature}`}>D</span>evenez indispensable.</h3>
