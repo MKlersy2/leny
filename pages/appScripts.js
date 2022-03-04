@@ -142,7 +142,6 @@ export default class Layout extends React.Component {
             parallaxOriginNeg = $(document).scrollTop() * -.10;
 
             parallaxOrigineTop.forEach(origineTop => {
-              console.log(origineTop.attributes.limitesize.value, window.innerWidth);
               if(origineTop.hasAttribute('limitesize')) {
                 let sizeLimit =  parseInt(origineTop.attributes.limitesize.value);
                 window.innerWidth > sizeLimit ? origineTop.style.transform = `translateY(${parallaxOriginPos}px)` : null;
@@ -151,7 +150,6 @@ export default class Layout extends React.Component {
               }
             });
             parallaxOrigineBot.forEach(origineBot => {
-              console.log(origineBot.attributes.limitesize.value);
               if(origineBot.hasAttribute('limitesize')) {
                 let sizeLimit =  parseInt(origineBot.attributes.limitesize.value);
                 window.innerWidth > sizeLimit ? origineBot.style.transform = `translateY(${parallaxOriginNeg}px)` : null;
