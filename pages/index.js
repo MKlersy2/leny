@@ -125,8 +125,8 @@ export default function Home() {
                 </div>
                 <div className={`${styles.positionRelative} ${headStyle.triggerCarousel3} ${styles.colorBlack} ${styles.backgroundWhite}`}>
                   <div className={`${styles.displayFlex} ${styles.flexCol} ${headStyle.marge}`}>
-                    <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>D</span>es services exceptionnels.</h3>
-                    <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Lorem Ipsum is é aaàæsimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurie.</p>
+                    <h3 fadein='true' className={`${effectStyles.fromBottom} ${styles.boxSubtitle}`}><span className={`${headStyle.ligature}`}>L</span>&apos;efficacité sur-mesure.</h3>
+                    <p fadein='true' className={`${effectStyles.fromNowhere} ${styles.boxParagraphe}`}>Parce que chaque agence à son effectif et ses besoins, Leny s&apos;adapte à vous. Choisissez votre formule et soyez enfin l&apos;agent que vos clients attendaient.</p>
                   </div>
                 </div>
                 <div className={`${styles.displayFlex} ${pricing.marginGlobal} ${styles.backgroundWhite} ${styles.positionRelative} ${styles.zIndexBig} ${styles.listingPrix}`}>

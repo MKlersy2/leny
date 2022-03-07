@@ -18,7 +18,6 @@ export default class Layout extends React.Component {
       }
       var parallaxY = 0;
       var parallaxY2 = 0;
-
       $(document).on("scroll", function() {
         
         const image = $(`.${headStyle.image}`);
